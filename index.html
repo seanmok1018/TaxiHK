@@ -3,142 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>下一站・唞唞 | 你的專屬車廂樹窿</title>
-    <!-- 引入 Tailwind CSS 進行排版 -->
+    <title>香港的士・心靈加油站</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 引入 Google Fonts (Noto Sans HK) -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- 引入 FontAwesome 圖示 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        body {
-            font-family: 'Noto Sans HK', sans-serif;
-            /* 這裡設定網頁的背景圖片！ */
-            /* 你可以將 url() 裡面的連結換成你上傳到網上的那張「十字路口的士」圖片 */
-            background-image: url('https://images.unsplash.com/photo-1572099307773-455b70d4ab53?q=80&w=1000&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        
-        /* 玻璃透視效果 (Glassmorphism) */
-        .glass-card {
-            background: rgba(30, 30, 30, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .glass-button {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            transition: all 0.3s ease;
-        }
-
-        .glass-button:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-        }
+        body { font-family: 'Noto Sans HK', sans-serif; background-color: #0f172a; color: #f1f5f9; }
+        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .tab-active { color: #fbbf24; border-bottom: 3px solid #fbbf24; }
+        .hidden-section { display: none; }
+        .gradient-text { background: linear-gradient(45deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body class="min-h-screen text-slate-100 flex justify-center">
-    <!-- 整個網頁的黑色半透明遮罩，確保文字清楚 -->
-    <div class="fixed inset-0 bg-black/50 z-0"></div>
+<body class="min-h-screen pb-20">
 
-    <!-- 主要內容區 (限制寬度，營造手機 App 感覺) -->
-    <div class="relative z-10 w-full max-w-md px-5 py-10 flex flex-col gap-6">
+    <header class="pt-8 pb-4 text-center sticky top-0 bg-[#0f172a]/90 backdrop-blur-md z-50">
+        <h1 class="text-2xl font-bold gradient-text mb-1">香港的士・心靈加油站</h1>
+        <p class="text-xs text-slate-400 tracking-widest uppercase">Hong Kong Taxi & Wellbeing Hub</p>
         
-        <!-- 頂部：標題與問候語 -->
-        <header class="text-center space-y-3 mt-4 mb-2">
-            <div class="inline-block glass-card px-4 py-1 rounded-full text-amber-400 text-sm tracking-widest mb-2 border-amber-500/30">
-                TAXI ON THE CROSSROADS
+        <nav class="flex justify-around mt-6 border-b border-white/10">
+            <button onclick="showTab('mental-health')" id="tab-mental-health" class="tab-active pb-3 text-sm font-medium transition-all">
+                <i class="fa-solid fa-brain block text-lg mb-1"></i>心靈健康
+            </button>
+            <button onclick="showTab('relaxation')" id="tab-relaxation" class="pb-3 text-sm font-medium text-slate-400 transition-all">
+                <i class="fa-solid fa-leaf block text-lg mb-1"></i>放鬆練習
+            </button>
+            <button onclick="showTab('taxi-booking')" id="tab-taxi-booking" class="pb-3 text-sm font-medium text-slate-400 transition-all">
+                <i class="fa-solid fa-taxi block text-lg mb-1"></i>預約＆付款
+            </button>
+        </nav>
+    </header>
+
+    <main class="max-w-md mx-auto px-5 py-6">
+
+        <section id="section-mental-health" class="space-y-6">
+            <div class="space-y-4">
+                <h2 class="text-lg font-bold flex items-center gap-2 text-amber-400">
+                    <i class="fa-solid fa-phone-volume"></i> 24小時情緒支援熱線
+                </h2>
+                <div class="grid gap-3">
+                    <a href="tel:23820000" class="glass p-4 rounded-xl flex justify-between items-center">
+                        <div><p class="font-bold">生命熱線</p><p class="text-xs text-slate-400">自殺預防服務</p></div>
+                        <p class="text-amber-400 font-bold">2382 0000</p>
+                    </a>
+                    <a href="tel:18111" class="glass p-4 rounded-xl flex justify-between items-center">
+                        <div><p class="font-bold">情緒通</p><p class="text-xs text-slate-400">政府精神健康支援熱線</p></div>
+                        <p class="text-amber-400 font-bold">18111</p>
+                    </a>
+                    <a href="tel:18288" class="glass p-4 rounded-xl flex justify-between items-center">
+                        <div><p class="font-bold">明愛向晴軒</p><p class="text-xs text-slate-400">家庭及危機支援</p></div>
+                        <p class="text-amber-400 font-bold">18288</p>
+                    </a>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold tracking-wider text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
-                下一站・唞唞
-            </h1>
-            <p class="text-slate-300 text-sm leading-relaxed mt-4 px-2">
-                車廂唞啖氣，無論生活幾難，總有出路。<br>
-                歡迎你喺呢段車程，好好休息一下。
-            </p>
-        </header>
 
-        <!-- 第一部分：情緒支援資源 (核心) -->
-        <section class="glass-card rounded-2xl p-5 shadow-2xl">
-            <h2 class="text-lg font-semibold text-teal-300 mb-4 flex items-center gap-2">
-                <i class="fa-solid fa-hand-holding-heart"></i> 24小時情緒支援熱線
-            </h2>
-            
-            <div class="space-y-3">
-                <!-- 撒瑪利亞防止自殺會 -->
-                <a href="tel:23892222" class="glass-button rounded-xl p-4 flex justify-between items-center group">
-                    <div>
-                        <h3 class="font-medium text-white text-base">撒瑪利亞防止自殺會</h3>
-                        <p class="text-xs text-slate-400 mt-1">傾訴及情緒支援</p>
+            <div class="space-y-4 pt-4">
+                <h2 class="text-lg font-bold flex items-center gap-2 text-teal-400">
+                    <i class="fa-solid fa-lightbulb"></i> 日常心理健康小貼士
+                </h2>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="glass p-4 rounded-xl text-center">
+                        <i class="fa-solid fa-comments text-teal-400 text-xl mb-2"></i>
+                        <p class="text-sm font-bold">傾訴感受</p>
+                        <p class="text-[10px] text-slate-400 mt-1">找信任的人分享，不獨自承受。</p>
                     </div>
-                    <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition">
-                        <i class="fa-solid fa-phone"></i>
+                    <div class="glass p-4 rounded-xl text-center">
+                        <i class="fa-solid fa-person-running text-teal-400 text-xl mb-2"></i>
+                        <p class="text-sm font-bold">保持活躍</p>
+                        <p class="text-[10px] text-slate-400 mt-1">運動釋放安多酚，提升情緒。</p>
                     </div>
-                </a>
+                    <div class="glass p-4 rounded-xl text-center">
+                        <i class="fa-solid fa-moon text-teal-400 text-xl mb-2"></i>
+                        <p class="text-sm font-bold">規律睡眠</p>
+                        <p class="text-[10px] text-slate-400 mt-1">充足休息是心理健康的基石。</p>
+                    </div>
+                    <div class="glass p-4 rounded-xl text-center">
+                        <i class="fa-solid fa-utensils text-teal-400 text-xl mb-2"></i>
+                        <p class="text-sm font-bold">均衡飲食</p>
+                        <p class="text-[10px] text-slate-400 mt-1">營養均衡，身體更有能量。</p>
+                    </div>
+                </div>
+            </div>
 
-                <!-- 生命熱線 -->
-                <a href="tel:23820000" class="glass-button rounded-xl p-4 flex justify-between items-center group">
-                    <div>
-                        <h3 class="font-medium text-white text-base">生命熱線</h3>
-                        <p class="text-xs text-slate-400 mt-1">24小時預防自殺熱線</p>
-                    </div>
-                    <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                </a>
-
-                <!-- 明愛向晴軒 -->
-                <a href="tel:18288" class="glass-button rounded-xl p-4 flex justify-between items-center group">
-                    <div>
-                        <h3 class="font-medium text-white text-base">明愛向晴軒</h3>
-                        <p class="text-xs text-slate-400 mt-1">家庭危機支援</p>
-                    </div>
-                    <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                </a>
-
-                <!-- Open Up (WhatsApp) -->
-                <a href="https://wa.me/85291012012" target="_blank" class="glass-button rounded-xl p-4 flex justify-between items-center group border-green-500/30">
-                    <div>
-                        <h3 class="font-medium text-white text-base">Open Up 網上輔導</h3>
-                        <p class="text-xs text-slate-400 mt-1">24小時 WhatsApp 文字傾訴</p>
-                    </div>
-                    <div class="w-10 h-10 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition">
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                    </div>
-                </a>
+            <div class="glass p-6 rounded-2xl border-t-4 border-amber-500 shadow-xl mt-8">
+                <h3 class="font-bold text-amber-500 flex items-center gap-2 mb-2">
+                    <i class="fa-solid fa-box-archive"></i> 心靈樹窿 (私密留言)
+                </h3>
+                <p class="text-xs text-slate-400 mb-4">有咩想發洩？或者有咩想對司機講？留言係私密嘅，只有司機會睇到。</p>
+                <form name="taxi-treehole" method="POST" data-netlify="true">
+                    <textarea name="message" rows="3" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg p-3 text-sm focus:outline-none focus:border-amber-500 mb-3" placeholder="打低你嘅心事..."></textarea>
+                    <button type="submit" class="w-full bg-amber-500 text-slate-900 font-bold py-3 rounded-lg text-sm hover:bg-amber-400 transition">發送給司機</button>
+                </form>
             </div>
         </section>
 
-        <!-- 第二部分：的士聯絡方法 -->
-        <section class="glass-card rounded-2xl p-5 shadow-2xl border-t-4 border-t-amber-500">
-            <h2 class="text-lg font-semibold text-amber-400 mb-4 flex items-center gap-2">
-                <i class="fa-solid fa-taxi"></i> 你的專屬車長
-            </h2>
-            <p class="text-sm text-slate-300 mb-5">如果你下次需要一個安靜、安全嘅車程，隨時搵我。我哋下一站見。</p>
-            
-            <!-- 將這裡的 85212345678 換成你的真實電話號碼 -->
-            <a href="https://wa.me/85212345678?text=司機你好，我想預約的士" target="_blank" 
-               class="block w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-center py-4 rounded-xl transition shadow-lg flex justify-center items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-xl"></i> 一鍵 WhatsApp 預約
-            </a>
+        <section id="section-relaxation" class="hidden-section space-y-6">
+            <div class="bg-rose-500/20 p-5 rounded-2xl border-l-4 border-rose-500">
+                <h2 class="text-xl font-bold text-rose-400 mb-1">放鬆練習</h2>
+                <p class="text-xs text-rose-200/60">每一次呼吸都是新開始。每一刻都能唞唞。</p>
+            </div>
+
+            <div class="glass p-5 rounded-2xl">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="font-bold text-rose-300"><i class="fa-solid fa-wind mr-2"></i>方型呼吸法</h3>
+                    <span class="text-[10px] bg-rose-500/30 px-2 py-1 rounded">5 分鐘 / 初學者</span>
+                </div>
+                <div class="space-y-3 text-sm">
+                    <p class="flex gap-2"><span class="text-rose-400 font-bold">1.</span> 吸氣：用鼻吸氣 4 秒</p>
+                    <p class="flex gap-2"><span class="text-rose-400 font-bold">2.</span> 憋氣：屏住呼吸 4 秒</p>
+                    <p class="flex gap-2"><span class="text-rose-400 font-bold">3.</span> 呼氣：緩緩由口呼出 4 秒</p>
+                    <p class="flex gap-2"><span class="text-rose-400 font-bold">4.</span> 憋氣：再次屏息 4 秒，重複 4 次</p>
+                </div>
+            </div>
+
+            <div class="glass p-5 rounded-2xl">
+                <h3 class="font-bold text-rose-300 mb-4"><i class="fa-solid fa-hand-fist mr-2"></i>肌肉鬆弛法</h3>
+                <p class="text-xs text-slate-400 mb-3">用力緊握拳頭維持 5 秒，然後突然放鬆，感受鬆弛的快感。重複於肩膊及雙腿。</p>
+                <div class="bg-emerald-500/10 text-emerald-400 text-[10px] p-2 rounded">
+                    <i class="fa-solid fa-check-circle"></i> 有效紓緩壓力及長期繃緊
+                </div>
+            </div>
+
+            <div class="glass p-5 rounded-2xl">
+                <h3 class="font-bold text-rose-300 mb-4"><i class="fa-solid fa-eye mr-2"></i>5-4-3-2-1 接地法</h3>
+                <div class="grid gap-2 text-xs">
+                    <p class="bg-white/5 p-2 rounded">看到 <span class="text-rose-400 font-bold">5</span> 件東西</p>
+                    <p class="bg-white/5 p-2 rounded">觸摸到 <span class="text-rose-400 font-bold">4</span> 件物件</p>
+                    <p class="bg-white/5 p-2 rounded">聽到 <span class="text-rose-400 font-bold">3</span> 種聲音</p>
+                    <p class="bg-white/5 p-2 rounded">聞到 <span class="text-rose-400 font-bold">2</span> 種氣味</p>
+                    <p class="bg-white/5 p-2 rounded">嚐到 <span class="text-rose-400 font-bold">1</span> 種味道</p>
+                </div>
+            </div>
         </section>
 
-        <!-- 頁尾免責聲明 -->
-        <footer class="text-center mt-6 pb-6">
-            <p class="text-xs text-slate-500 leading-relaxed px-4">
-                免責聲明：本網頁提供的資源僅供參考，不能代替專業醫療建議。如遇緊急情況，請立即致電 999 報警或前往急症室。<br>
-                <span class="mt-2 block">&copy; 2026 下一站唞唞. 願你平安.</span>
-            </p>
-        </footer>
+        <section id="section-taxi-booking" class="hidden-section space-y-6">
+            <div class="bg-amber-500/10 p-6 rounded-2xl border-b-4 border-amber-500 text-center">
+                <h2 class="text-xl font-bold text-amber-400 mb-1">的士預約 & 聯絡</h2>
+                <p class="text-xs text-slate-400">安全・準時・專業服務</p>
+            </div>
 
-    </div>
+            <div class="grid gap-4">
+                <a href="tel:91234567" class="bg-blue-600 p-5 rounded-2xl flex items-center justify-between shadow-lg">
+                    <div><p class="text-xs opacity-70">即時撥號</p><p class="text-xl font-bold">9123 4567</p></div>
+                    <i class="fa-solid fa-phone text-3xl"></i>
+                </a>
+                <a href="https://wa.me/85291234567" class="bg-emerald-600 p-5 rounded-2xl flex items-center justify-between shadow-lg">
+                    <div><p class="text-xs opacity-70">WhatsApp 24小時預約</p><p class="text-xl font-bold">9123 4567</p></div>
+                    <i class="fa-brands fa-whatsapp text-4xl"></i>
+                </a>
+            </div>
+
+            <div class="glass p-5 rounded-2xl space-y-4">
+                <h3 class="font-bold text-amber-400 flex items-center gap-2">
+                    <i class="fa-solid fa-question-circle"></i> 常見問題 FAQ
+                </h3>
+                <div class="text-sm space-y-3">
+                    <div><p class="font-bold">如何預約？</p><p class="text-xs text-slate-400">提前 1 小時致電或 WhatsApp 即可。</p></div>
+                    <hr class="border-white/5">
+                    <div><p class="font-bold">接受咩付款方式？</p><p class="text-xs text-slate-400">現金、八達通、PayMe、AlipayHK、WeChat Pay。</p></div>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="font-bold text-blue-300 flex items-center gap-2 px-2">
+                    <i class="fa-solid fa-qrcode"></i> 電子支付收銀台
+                </h3>
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="text-center">
+                        <div class="bg-white p-1 rounded-lg mb-1"><img src="payme.jpg" class="w-full rounded"></div>
+                        <p class="text-[10px] text-red-500 font-bold">PayMe</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white p-1 rounded-lg mb-1"><img src="alipay.jpg" class="w-full rounded"></div>
+                        <p class="text-[10px] text-blue-500 font-bold">AlipayHK</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white p-1 rounded-lg mb-1"><img src="wechat.png" class="w-full rounded"></div>
+                        <p class="text-[10px] text-emerald-500 font-bold">WeChat</p>
+                    </div>
+                </div>
+                <p class="text-[10px] text-center text-slate-500">如正在瀏覽，請截圖並於支付 App 中開啟相簿。</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="px-8 text-center opacity-30 text-[10px] mb-10">
+        <p>本網頁資訊僅供參考，如遇緊急情況請即致電 999 或前往急症室。</p>
+        <p class="mt-1">© 2026 香港的士心靈加油站 | 願你平安</p>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            // 隱藏所有 section
+            document.querySelectorAll('section').forEach(s => s.classList.add('hidden-section'));
+            // 顯示選擇的 section
+            document.getElementById('section-' + tabName).classList.remove('hidden-section');
+            
+            // 重設 Tab 樣式
+            document.querySelectorAll('nav button').forEach(b => {
+                b.classList.remove('tab-active');
+                b.classList.add('text-slate-400');
+            });
+            // 設定啟用的 Tab 樣式
+            const activeTab = document.getElementById('tab-' + tabName);
+            activeTab.classList.add('tab-active');
+            activeTab.classList.remove('text-slate-400');
+
+            // 自動碌返去頂部
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
