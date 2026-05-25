@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用一程的士嘅空間，畀自己好好唞一唞 | Take a Moment to Rest</title>
+    <title>用一程的士嘅時間，畀自己好好唞一唞 | Take the Time of a Ride to Rest</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
         body { font-family: 'Noto Sans HK', sans-serif; background-color: #020617; color: #f1f5f9; }
-        .glass { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .glass { background: rgba(30, 41, 49, 0.6); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); }
         
-        /* Tab Colors */
         .tab-btn { transition: all 0.3s ease; border-bottom: 3px solid transparent; opacity: 0.5; }
         .tab-active-red { color: #ef4444; border-bottom-color: #ef4444; opacity: 1 !important; }
         .tab-active-green { color: #10b981; border-bottom-color: #10b981; opacity: 1 !important; }
@@ -29,8 +28,8 @@
 <body class="min-h-screen pb-12">
 
     <header class="pt-10 pb-4 text-center sticky top-0 bg-[#020617]/95 backdrop-blur-md z-50 px-2">
-        <h1 class="text-xl font-bold text-slate-100 mb-1 leading-snug">用一程的士嘅空間，<br class="sm:hidden">畀自己好好唞一唞</h1>
-        <p class="text-[9px] text-slate-500 tracking-[0.2em] uppercase">Take a Moment to Rest During Your Ride</p>
+        <h1 class="text-xl font-bold text-slate-100 mb-1 leading-snug">用一程的士嘅時間，<br class="sm:hidden">畀自己好好唞一唞</h1>
+        <p class="text-[9px] text-slate-500 tracking-[0.2em] uppercase">Take the time of a taxi ride to give yourself a proper rest</p>
         
         <nav class="flex justify-between mt-6 border-b border-white/5 overflow-x-auto no-scrollbar">
             <button onclick="showTab('taxi-booking', 'red')" id="tab-taxi-booking" class="tab-btn tab-active-red pb-3 px-2 shrink-0 text-[11px] font-bold text-center">
@@ -56,26 +55,26 @@
                     「生活雖然好忙碌，但無論點樣，我都覺得你值得抽一程的士嘅時間出嚟，停一停，好好照顧自己。 🚕」
                 </p>
                 <p class="text-[11px] text-red-300/70 italic mt-2 leading-relaxed">
-                    "Life may be hectic, but no matter what, I believe you deserve to take the length of a taxi ride to pause and take care of yourself."
+                    "Life may be hectic, but no matter what, I believe you deserve to take the duration of a taxi ride to pause and take care of yourself."
                 </p>
             </div>
 
             <div class="space-y-4 text-xs text-slate-300 leading-relaxed px-2">
                 <div class="flex gap-3">
                     <i class="fa-solid fa-plane-arrival text-red-400 mt-1"></i>
-                    <p><b>往返關口與機場</b>：提供各大口岸往返接送、過境碼頭及機場接送預約。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Border & Airport Transfers</b>: Dedicated pick-up and drop-off services for all major border checkpoints, ferry terminals, and the airport.</span></p>
+                    <p><b>往返關口與機場</b>：提供各大口岸往返接送、過境碼頭及機場接送預約。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Border & Airport Transfers</b>: Pick-up and drop-off services for checkpoints, ferry terminals, and the airport.</span></p>
                 </div>
                 <div class="flex gap-3">
                     <i class="fa-solid fa-calendar-days text-red-400 mt-1"></i>
-                    <p><b>定時用車預約</b>：歡迎上班、上學、定期覆診等每日或每週的定時長期用車預約。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Scheduled Rides</b>: Long-term daily or weekly scheduled bookings are fully welcomed for commutes, school runs, or medical appointments.</span></p>
+                    <p><b>定時用車預約</b>：歡迎上班、上學、定期覆診等每日或每週的定時長期用車預約。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Scheduled Rides</b>: Daily or weekly scheduled bookings for commutes, school runs, or appointments.</span></p>
                 </div>
                 <div class="flex gap-3">
                     <i class="fa-solid fa-map-location-dot text-red-400 mt-1"></i>
-                    <p><b>路線隨你心意</b>：歡迎指定行車路線或親自教路；如果無特別要求，則按 Google Maps 最佳建議路線行駛。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Route Preference</b>: You are most welcome to specify your preferred route or guide me. Otherwise, the optimal Google Maps route will be used.</span></p>
+                    <p><b>路線隨你心意</b>：歡迎指定行車路線或親自教路；如果無特別要求，則按 Google Maps 建議行駛。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Route Preference</b>: Feel free to specify your route or guide me. Otherwise, I follow Google Maps.</span></p>
                 </div>
                 <div class="flex gap-3">
                     <i class="fa-solid fa-heart text-red-400 mt-1"></i>
-                    <p><b>配合特別需求</b>：如有特定需要（如運送大型行李、摺疊輪椅或寵物乘車等），預約時提前說明即可。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Special Requirements</b>: For specific needs (e.g., large luggage, folded wheelchairs, or pets), please let me know in advance during booking.</span></p>
+                    <p><b>配合特別需求</b>：如有特定需要（如運送大型行李、摺疊輪椅或寵物乘車等），預約時提前說明即可。<br><span class="text-[11px] text-slate-500 block mt-0.5"><b>Special Requests</b>: For large luggage, wheelchairs, or pets, please let me know during booking.</span></p>
                 </div>
             </div>
 
@@ -88,20 +87,20 @@
                 <a href="https://wa.me/85252018549?text=你好，我想預約的士" target="_blank" class="glass bg-emerald-600/20 p-5 rounded-2xl flex flex-col items-center justify-center text-center hover:bg-emerald-600/30 transition">
                     <i class="fa-brands fa-whatsapp text-3xl text-emerald-400 mb-1"></i>
                     <p class="text-xs font-bold">WhatsApp 預約</p>
-                    <p class="text-[10px] text-slate-400 mt-1">查詢詳情 / Inquiry</p>
+                    <p class="text-[10px] text-slate-400 mt-1">預約查詢 / Inquiry</p>
                 </a>
             </div>
 
             <div class="glass p-5 rounded-2xl space-y-4">
                 <h3 class="text-xs font-bold text-red-400 uppercase tracking-widest border-b border-white/5 pb-2">常見問題 FAQ</h3>
-                <div class="text-xs space-y-4 leading-relaxed">
+                <div class="text-xs space-y-4 leading-relaxed text-slate-300">
                     <div>
-                        <p class="font-bold text-slate-200">❓ 📱 如何預約？ / How to book?</p>
-                        <p class="text-slate-400 mt-1">本車由全職司機一人營運。為提供更穩定及專屬的服務，十分歡迎<b>每日或每週的定時用車預約</b>。如需即時接送或關口往返，敬請<b>提早最少一小時</b>聯絡。<br><span class="text-[11px] text-slate-500 block mt-1">This taxi is operated independently by a single driver. To ensure stable and dedicated service, daily or weekly scheduled bookings are highly preferred. For immediate trips or border transfers, please contact at least one hour in advance.</span></p>
+                        <p class="font-bold">❓ 📱 如何預約？ / How to book?</p>
+                        <p class="text-slate-400 mt-1">本車由全職司機一人營運。為提供更穩定及專屬的服務，十分歡迎<b>每日或每週的定時用車預約</b>。如需即時接送或關口往返，敬請<b>提早最少一小時</b>聯絡。<br><span class="text-[11px] text-slate-500 block mt-1">Operated independently by a single driver. Daily or weekly scheduled bookings preferred. For immediate trips, contact at least one hour in advance.</span></p>
                     </div>
                     <div>
-                        <p class="font-bold text-slate-200">❓ 💳 接受哪些付款方式？ / What payments are accepted?</p>
-                        <p class="text-slate-400 mt-1">接受現金、PayMe、轉數快 (FPS)、AlipayHK、WeChat Pay 及八達通付款。<br><span class="text-[11px] text-slate-500 block mt-1">Cash, PayMe, FPS, AlipayHK, WeChat Pay, and Octopus card are all accepted.</span></p>
+                        <p class="font-bold">❓ 💳 接受哪些付款方式？ / What payments are accepted?</p>
+                        <p class="text-slate-400 mt-1">接受現金、PayMe、轉數快 (FPS)、AlipayHK、WeChat Pay 及八達通付款。<br><span class="text-[11px] text-slate-500 block mt-1">Cash, PayMe, FPS, AlipayHK, WeChat Pay, and Octopus are all accepted.</span></p>
                     </div>
                 </div>
             </div>
@@ -110,18 +109,18 @@
                 <h3 class="text-xs font-bold text-red-400 uppercase tracking-widest border-b border-white/5 pb-2">👋 關於我・車長阿 Sean / About Me</h3>
                 <div class="text-xs space-y-3 leading-relaxed text-slate-300">
                     <p>Hello，我係阿 Sean！最近啱啱開始做全職特更的士司機。🎒</p>
-                    <p>我好鍾意揸車！對我嚟講，車廂唔單止係工作嘅地方，更係一個可以畀自己喘息嘅空間，而我都好希望每一位上車嘅乘客，喺繁忙急促嘅生活入面，都可以搵到一個令自己覺得安全、自在、舒服嘅地方。🍀</p>
-                    <p>而我都邀請你喺呢短短一程車嘅時間，都可以好好停一停、唞一唞，休息吓先再出發去面對痕跡與挑戰。💪✨</p>
+                    <p>我好鍾意揸車！對我嚟講，車廂唔單止係工作嘅地方，更係一個可以畀自己喘息嘅空間。希望每一位喺繁忙急促嘅生活入面，都搵到一個令自己覺得安全、自在、舒服嘅地方。🍀</p>
+                    <p>而我想邀請你喺呢短短一程車嘅時間，都可以停一停、唞一唞，可以用你舒服嘅方式放鬆或放空，又或者試吓唔同嘅放鬆練習，休息吓先再出發去面對唔同嘅挑戰。💪✨</p>
                     <div class="p-3 bg-red-500/5 rounded-xl border border-red-500/10 mt-2">
                         <p><b>💡 溫馨小備註：</b><br>作為新手車長，我有時都唔係好熟路。🗺️ 如果途中唔小心行錯咗或者兜遠咗路，請你隨時出聲，非常樂意退回差價！先多謝你嘅包容同體諒。🙏❤️</p>
                     </div>
                 </div>
                 <hr class="border-white/5 my-2">
                 <div class="text-[11px] space-y-3 leading-relaxed text-slate-400 italic">
-                    <p>Hello, I'm Sean! I recently started my journey as a full-time taxi driver. 🎒</p>
-                    <p>I genuinely love driving! To me, this cabin is more than just a workspace; it’s a personal space to catch my breath. My greatest hope is that everyone who gets in my car can find a space in their busy, fast-paced lives—wherever that may be—where they feel safe, at ease, and comfortable. 🍀</p>
-                    <p>I invite you to use the duration of this short ride to simply pause, unwind, and rest before heading out to face your next challenge. 💪✨</p>
-                    <p><b>💡 A Gentle Note:</b> As a newer driver, I might not be perfectly familiar with every route yet. 🗺️ If I accidentally take a wrong turn or a longer route, please don't hesitate to let me know—I am more than happy to refund the fare difference! Thank you so much for your patience and understanding. 🙏❤️</p>
+                    <p>Hello, I'm Sean! I recently started working as a full-time "split-shift" taxi driver. 🎒</p>
+                    <p>I love driving! To me, the car cabin is more than just a workplace; it's a space where I can catch my breath. I hope everyone living a busy and hectic life can find a place where they feel safe, at ease, and comfortable. 🍀</p>
+                    <p>I invite you to use this short ride to pause and rest. You can relax or zone out in whatever way feels best for you, or try the relaxation exercises here. Take a break before heading back out to face different challenges. 💪✨</p>
+                    <p><b>💡 A Gentle Note:</b> As a newer driver, I might not always be familiar with every route yet. 🗺️ If I accidentally take a wrong turn or a longer way, please let me know—I am more than happy to refund the fare difference! Thank you for your patience and understanding. 🙏❤️</p>
                 </div>
             </div>
             
@@ -137,7 +136,7 @@
                     「唔需要追求完美，只要畀心靈試吓放鬆。初初練習可能會有啲唔慣、甚至覺得奇怪，呢啲都係好正常嘅反應，慢慢嚟就得。 🍵」
                 </p>
                 <p class="text-[11px] text-emerald-300/70 italic mt-2 leading-relaxed">
-                    "There is no need for perfection; just give your mind a chance to unwind. It is completely normal to feel unfamiliar or even slightly strange at first. Take your time."
+                    "There is no need for perfection; just give your mind a chance to unwind. It is normal to feel unfamiliar or slightly strange at first. Take your time."
                 </p>
             </div>
 
@@ -146,138 +145,27 @@
                     <button onclick="toggleAccordion('ex1')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
                         <div>
                             <p class="font-bold text-sm text-slate-100">🌬️ 腹式呼吸 / Box Breathing</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">快速平靜心跳，舒緩突如其來的焦慮緊張 / Calms heart rate and acute anxiety.</p>
+                            <p class="text-[10px] text-emerald-400/80 mt-1">快速平靜心跳，舒緩突如其來的焦慮緊張</p>
                         </div>
                         <i id="arrow-ex1" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
                     </button>
                     <div id="content-ex1" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-300">
-                        <div class="space-y-3 leading-relaxed">
-                            <p><b>步驟 1 / Step 1:</b> 搵一個舒服嘅坐姿，背部輕輕靠住椅背，雙肩自然垂低放鬆。<br><span class="text-slate-500 block mt-0.5">Find a comfortable seated position, lean back gently, and let your shoulders drop and relax.</span></p>
-                            <p><b>步驟 2 / Step 2:</b> 將一隻手輕輕放喺肚臍上面。用鼻子慢慢吸氣，心裡默數 4 秒。想像將空氣吸入肚底，你會感覺到肚皮微微脹起。<br><span class="text-slate-500 block mt-0.5">Place a hand on your belly. Inhale slowly through your nose for 4 seconds. Imagine breathing deep into your abdomen, feeling it expand.</span></p>
-                            <p><b>步驟 3 / Step 3:</b> 溫和地屏住呼吸，心裡默數 4 秒。<br><span class="text-slate-500 block mt-0.5">Gently hold your breath and count to 4 in your mind.</span></p>
-                            <p><b>步驟 4 / Step 4:</b> 微微張開嘴唇，好似吹微風一樣慢慢將空氣呼出，默數 4 秒。感受肚皮慢慢平伏。<br><span class="text-slate-500 block mt-0.5">Part your lips slightly, exhale slowly for 4 seconds like a soft breeze, feeling your belly fall.</span></p>
-                            <p><b>步驟 5 / Step 5:</b> 再次屏息 4 秒，然後重複成個循環 4-6 次。<br><span class="text-slate-500 block mt-0.5">Hold for another 4 seconds, then repeat this entire cycle 4-6 times.</span></p>
-                        </div>
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 space-y-2">
-                            <p><span class="text-emerald-400 font-bold">💡 溫馨提示 / Tip：</span>初學嘅時候，如果覺得憋氣 4 秒有啲吃力，可以隨意改做 3 秒，最緊要係順應自己舒服嘅節奏。<br><span class="text-[11px] text-slate-400 block">If holding for 4 seconds feels tight, reduce it to 3 seconds. Always follow your own comfortable rhythm.</span></p>
-                            <p><span class="text-emerald-400 font-bold">🌟 小鼓勵 / Reflection：</span>每一次嘅一呼一吸，都喺度幫你嘅身體找回穩定。 / Each breath brings stability back to your body.</p>
+                        <p><b>步驟 1 / Step 1:</b> 搵一個舒服嘅坐姿，背部輕輕靠住椅背，雙肩自然垂低放鬆。</p>
+                        <p><b>步驟 2 / Step 2:</b> 將一隻手輕輕放喺肚臍上面。用鼻子慢慢吸氣 4 秒。想像將空氣吸入肚底，感覺肚皮微微脹起。</p>
+                        <p><b>步驟 3 / Step 3:</b> 屏住呼吸，心裡默數 4 秒。</p>
+                        <p><b>步驟 4 / Step 4:</b> 微微張開嘴唇，慢慢呼氣 4 秒。感受肚皮慢慢平伏。</p>
+                        <p><b>步驟 5 / Step 5:</b> 再次屏息 4 秒，重複循環 4-6 次。</p>
+                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20">
+                            <p><span class="text-emerald-400 font-bold">💡 Tip：</span>憋氣 4 秒有啲吃力可以改做 3 秒，順應自己節奏。</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10">
-                    <button onclick="toggleAccordion('ex2')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">💪 漸進式肌肉放鬆 / Muscle Relaxation</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">透過對比繃緊與放鬆，釋放身體深層嘅壓力 / Relieves physical stress by contrasting tension.</p>
-                        </div>
-                        <i id="arrow-ex2" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
-                    </button>
-                    <div id="content-ex2" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-300">
-                        <div class="space-y-3 leading-relaxed">
-                            <p><b>步驟 1 / Step 1:</b> 由雙腳開始，用力捲曲並收緊所有腳趾肌肉，維持 5 秒鐘。<br><span class="text-slate-500 block mt-0.5">Start with your feet — curl and tense your toes tightly for 5 seconds.</span></p>
-                            <p><b>步驟 2 / Step 2:</b> 突然間完全放鬆。靜靜停留 10 秒，細心感受緊張感消退、肌肉變輕盈嘅感覺。<br><span class="text-slate-500 block mt-0.5">Suddenly release all tension completely. Rest for 10 seconds, feeling the tension melt away into lightness.</span></p>
-                            <p><b>步驟 3 / Step 3:</b> 慢慢向上移。用力拉緊小腿肌肉 5 秒，然後徹底放鬆 10 秒。<br><span class="text-slate-500 block mt-0.5">Move up slowly. Tense your calf muscles for 5 seconds, then let go completely for 10 seconds.</span></p>
-                            <p><b>步驟 4 / Step 4:</b> 繼續將呢個「收緊再放鬆」嘅步驟帶到大腿、手掌拳頭、以及肩膊（縮起膊頭貼近耳仔）。<br><span class="text-slate-500 block mt-0.5">Continue this cycle up through your thighs, clenching your fists, and shrugging your shoulders tightly.</span></p>
-                            <p><b>步驟 5 / Step 5:</b> 最後到臉部肌肉，用力咬緊牙關、縐眉、閉緊雙眼 5 秒，然後徹底放鬆全面。<br><span class="text-slate-500 block mt-0.5">Finally, squeeze your facial muscles, jaw, and eyes tightly for 5 seconds, then release completely.</span></p>
-                        </div>
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 space-y-2">
-                            <p><span class="text-emerald-400 font-bold">💡 溫馨提示 / Tip：</span>收緊肌肉時點到即止，有拉緊嘅感覺就足夠，千萬唔好太用力以免抽筋。<br><span class="text-[11px] text-slate-400 block">Tense until you feel the resistance, but do not push to the point of strain or cramping.</span></p>
-                            <p><span class="text-emerald-400 font-bold">🌟 小鼓勵 / Reflection：</span>身體放鬆咗，心情自然會跟住變得輕鬆。 / As your body releases, your mind follows.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10">
-                    <button onclick="toggleAccordion('ex3')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">🖐️ 5-4-3-2-1 接地技巧 / Grounding</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">停止腦海過度運轉，引導混亂思緒重回當下 / Shifts anxiety back to reality.</p>
-                        </div>
-                        <i id="arrow-ex3" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
-                    </button>
-                    <div id="content-ex3" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-300">
-                        <div class="space-y-2 leading-relaxed">
-                            <p class="mb-2 font-bold">動用你當下的感官，在車內或窗外尋找並講出：<br><span class="font-normal text-slate-400">Acknowledge your surroundings through your senses:</span></p>
-                            <p>👀 <span class="font-bold text-slate-100">5 件</span> 你睇到嘅事物 <span class="text-slate-400 font-normal">/ 5 things you can see (e.g. car window, trees)</span></p>
-                            <p>✋ <span class="font-bold text-slate-100">4 件</span> 你觸摸到嘅質感 <span class="text-slate-400 font-normal">/ 4 things you can touch (e.g. seat leather, clothes)</span></p>
-                            <p>👂 <span class="font-bold text-slate-100">3 種</span> 你聽到嘅聲音 <span class="text-slate-400 font-normal">/ 3 sounds you can hear (e.g. engine hum, wind)</span></p>
-                            <p>👃 <span class="font-bold text-slate-100">2 種</span> 你聞到嘅氣味 <span class="text-slate-400 font-normal">/ 2 smells you can notice (e.g. air conditioning, rain)</span></p>
-                            <p>👅 <span class="font-bold text-slate-100">1 種</span> 你嚐到嘅味道 <span class="text-slate-400 font-normal">/ 1 taste you can experience (e.g. mint flavor, water)</span></p>
-                        </div>
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 space-y-2">
-                            <p><span class="text-emerald-400 font-bold">💡 溫馨提示 / Tip：</span>搵唔齊數量完全無問題，呢個練習嘅目的只係將注意力由腦海嘅焦慮轉移返實體世界。<br><span class="text-[11px] text-slate-400 block">It is completely fine if you can't find all items. The purpose is simply to anchor your focus.</span></p>
-                            <p><span class="text-emerald-400 font-bold">🌟 小鼓勵 / Reflection：</span>踏實地活在這一秒鐘，你現在非常安全。 / You are safe here in this present moment.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10">
-                    <button onclick="toggleAccordion('ex4')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">🧘 正念身體掃描 / Body Scan</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">溫和溫柔地觀察全身，不作批判地陪伴自己 / Compassionate physical self-awareness.</p>
-                        </div>
-                        <i id="arrow-ex4" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
-                    </button>
-                    <div id="content-ex4" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-300">
-                        <div class="space-y-3 leading-relaxed">
-                            <p><b>步驟 1 / Step 1:</b> 輕輕合上雙眼，深呼吸幾次，讓身體安頓落嚟。<br><span class="text-slate-500 block mt-0.5">Close your eyes gently, taking a few slow, centering breaths.</span></p>
-                            <p><b>步驟 2 / Step 2:</b> 將注意力集中喺頭頂，好似道溫柔嘅微光，準備緩慢地向下移動。<br><span class="text-slate-500 block mt-0.5">Bring focus to the top of your head, like a soft light preparing to scan downwards.</span></p>
-                            <p><b>步驟 3 / Step 3:</b> 讓注意力慢慢向下移：經過額頭、眼皮、面頰、頸部、膊頭、手臂、胸口、直到腳尖。<br><span class="text-slate-500 block mt-0.5">Slowly move your focus down through your face, neck, shoulders, chest, abdomen, and toes.</span></p>
-                            <p><b>步驟 4 / Step 4:</b> 沿途觀察每個部位嘅客觀感覺（如溫熱、痠軟或繃緊），無需多加評判。<br><span class="text-slate-500 block mt-0.5">Notice any physical sensations (warmth, aches, tightness) along the way without judging them.</span></p>
-                            <p><b>步驟 5 / Step 5:</b> 不需要試圖去改變任何不適，單純地知道、陪伴佢就可以。<br><span class="text-slate-500 block mt-0.5">No need to change or fix any discomfort; simply acknowledge and stay with the feeling.</span></p>
-                        </div>
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 space-y-2">
-                            <p><span class="text-emerald-400 font-bold">💡 溫馨提示 / Tip：</span>中途分心諗起其他嘢係必然嘅。發覺自己分心時，溫柔地將注意力帶回身體部分就得。<br><span class="text-[11px] text-slate-400 block">Your mind will wander, which is entirely natural. Gently guide your focus back when it does.</span></p>
-                            <p><span class="text-emerald-400 font-bold">🌟 小鼓勵 / Reflection：</span>多謝你嘅身體默默為你撐咗咁耐，辛苦了。 / Thank your body for carrying you this far.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10">
-                    <button onclick="toggleAccordion('ex5')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">🏖️ 可視化練習 / Visualization</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">在心中為自己開一扇安靜的窗，暫離現實紛擾 / Mindful visualization for mental relief.</p>
-                        </div>
-                        <i id="arrow-ex5" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
-                    </button>
-                    <div id="content-ex5" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-300">
-                        <div class="space-y-3 leading-relaxed">
-                            <p><b>步驟 1 / Step 1:</b> 閉上眼睛，做三次緩慢嘅深呼吸。<br><span class="text-slate-500 block mt-0.5">Close your eyes and take three slow, deep breaths.</span></p>
-                            <p><b>步驟 2 / Step 2:</b> 喺腦海中想像一個令你感到絕對平靜同安全嘅地方（如沙灘、森林或暖和嘅木屋）。<br><span class="text-slate-500 block mt-0.5">Imagine a place where you feel completely peaceful and safe (e.g., a beach, a quiet forest, or a warm cabin).</span></p>
-                            <p><b>步驟 3 / Step 3:</b> 運用感官去豐富畫面：細看嗰度嘅光線，聽吓浪聲或樹葉聲，感受風吹過嘅微溫。<br><span class="text-slate-500 block mt-0.5">Engage your senses: visualize the light, hear the waves or rustling leaves, and feel the warm breeze.</span></p>
-                            <p><b>步驟 4 / Step 4:</b> 讓自己完全置身於呢個避風港之中，靜心放鬆休息 5 分鐘。<br><span class="text-slate-500 block mt-0.5">Immerse yourself entirely in this sanctuary, resting and unwinding for 5 minutes.</span></p>
-                        </div>
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 space-y-2">
-                            <p><span class="text-emerald-400 font-bold">💡 溫馨提示 / Tip：</span>當你全情投入想像一個平靜嘅地方，你嘅身體都會跟住放鬆、分泌減壓荷爾蒙。<br><span class="text-[11px] text-slate-400 block">When you focus on a peaceful mental image, your body physically reacts by releasing calming hormones.</span></p>
-                            <p><span class="text-emerald-400 font-bold">🌟 小鼓勵 / Reflection：</span>無論外在世界幾喧鬧，你內心深處永遠有這一片寧靜地。 / Calm always resides within you.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10">
-                    <button onclick="toggleAccordion('ex6')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">🙏 日常感恩練習 / Gratitude Journaling</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">轉換視角，看見生活中容易被忽略嘅微小幸福 / Rewires focus onto daily glimmers.</p>
-                        </div>
-                        <i id="arrow-ex6" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
-                    </button>
-                    <div id="content-ex6" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-300">
-                        <div class="space-y-3 leading-relaxed">
-                            <p><b>步驟 1 / Step 1:</b> 喺腦海中，或者打開手機備忘錄。<br><span class="text-slate-500 block mt-0.5">In your mind or on your phone's notes app.</span></p>
-                            <p><b>步驟 2 / Step 2:</b> 靜心回想今日內發生過、令你心存感謝嘅 3 件小事。<br><span class="text-slate-500 block mt-0.5">Reflect and recall 3 small things that happened today that you are grateful for.</span></p>
-                            <p><b>步驟 3 / Step 3:</b> 事情微不足道都無問題：如飲咗杯好茶、行路遇到綠燈、見到一朵好靚嘅花。<br><span class="text-slate-500 block mt-0.5">They can be tiny: enjoying a good tea, catching a green light, or seeing a beautiful flower.</span></p>
-                            <p><b>步驟 4 / Step 4:</b> 在心中停留幾秒，細心回味嗰份微小滿足所帶來嘅暖意。<br><span class="text-slate-500 block mt-0.5">Pause for a few seconds to absorb the warmth brought by this micro-happiness.</span></p>
-                        </div>
-                        <div class="bg-emerald-500/10 p-3 rounded-lg border border-emerald-500/20 space-y-2">
-                            <p><span class="text-emerald-400 font-bold">💡 溫馨提示 / Tip：</span>心情好差嗰陣可能一件都諗唔到，試吓由最基本出發：「我今日依然有健康呼吸嘅空間」。<br><span class="text-[11px] text-slate-400 block">On bad days, start with the absolute basics: "I still have the space to breathe safely right now."</span></p>
-                            <p><span class="text-emerald-400 font-bold">🌟 小鼓勵 / Reflection：</span>用心感受微細嘅美好，心靈會慢慢積累幸福嘅力量。 / Noticing tiny joys builds mental resilience.</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10"><button onclick="toggleAccordion('ex2')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none"><div><p class="font-bold text-sm text-slate-100">💪 漸進式肌肉放鬆 / Muscle Relaxation</p></div><i id="arrow-ex2" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i></button></div>
+                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10"><button onclick="toggleAccordion('ex3')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none"><div><p class="font-bold text-sm text-slate-100">🖐️ 5-4-3-2-1 接地技巧 / Grounding</p></div><i id="arrow-ex3" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i></button></div>
+                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10"><button onclick="toggleAccordion('ex4')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none"><div><p class="font-bold text-sm text-slate-100">🧘 正念身體掃描 / Body Scan</p></div><i id="arrow-ex4" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i></button></div>
+                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10"><button onclick="toggleAccordion('ex5')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none"><div><p class="font-bold text-sm text-slate-100">🏖️ 可視化練習 / Visualization</p></div><i id="arrow-ex5" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i></button></div>
+                <div class="glass rounded-2xl overflow-hidden border border-emerald-500/10"><button onclick="toggleAccordion('ex6')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none"><div><p class="font-bold text-sm text-slate-100">🙏 日常感恩練習 / Gratitude Journaling</p></div><i id="arrow-ex6" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i></button></div>
             </div>
 
             <div class="pt-6 border-t border-white/5">
@@ -286,32 +174,32 @@
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-comments text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">🗣️ 傾訴感受 / Sharing</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">向信任嘅人表達情緒，唔好自己一個人承受壓力。<br><span class="text-[9px] text-slate-500 block mt-0.5">Share feelings with someone you trust; don't bear stress alone.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">向信任嘅人表達情緒，唔好自己一個人承受壓力。</p>
                     </div>
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-person-running text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">🏃 保持活躍 / Stay Active</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">散步或拉筋有助釋放內啡肽，自然提升心情。<br><span class="text-[9px] text-slate-500 block mt-0.5">Walking or stretching helps release endorphins to naturally boost mood.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">散步或拉筋有助釋放內啡肽，自然提升心情。</p>
                     </div>
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-bed text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">💤 規律睡眠 / Sleep Well</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">建立固定作息時間，充足睡眠係心靈強健嘅基石。<br><span class="text-[9px] text-slate-500 block mt-0.5">Maintain a solid sleep routine; rest is the pillar of mental strength.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">建立固定作息時間，充足睡眠係心靈強健嘅基石。</p>
                     </div>
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-apple-whole text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">🥗 均衡飲食 / Eat Balanced</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">減少攝取過多咖啡因及糖分，為身體提供穩定能量。<br><span class="text-[9px] text-slate-500 block mt-0.5">Reduce high caffeine and sugar intake for steady, baseline energy.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">減少攝取過多咖啡因及糖分，為身體提供穩定能量。</p>
                     </div>
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-handshake-angle text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">🤝 尋求支援 / Seek Help</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">主動尋求專業輔導或協助並非軟弱，而是勇氣表現。<br><span class="text-[9px] text-slate-500 block mt-0.5">Reaching out for professional help is a sign of immense courage.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">主動尋求專業輔導或協助並非軟弱，而是勇氣表現。</p>
                     </div>
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-sparkles text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">✨ 珍惜當下 / Mindfulness</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">學習放慢腳步，用心感受生活每一刻嘅微小細節。<br><span class="text-[9px] text-slate-500 block mt-0.5">Slow down and consciously appreciate the micro-details of life.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">學習放慢腳步，用心感受生活每一刻嘅微細細節。</p>
                     </div>
                 </div>
             </div>
@@ -320,31 +208,28 @@
         <section id="section-quiz" class="hidden-section space-y-6">
             <div class="bg-blue-500/10 p-6 rounded-3xl border-l-4 border-blue-500 shadow-sm gentle-gradient">
                 <p class="text-sm text-blue-100 leading-relaxed font-bold">
-                    「無論今日過得點，都好多謝你願意留少少時間畀自己，了解吓自己嘅精神健康狀態！🌤️」
+                    「無論最近過成點，都好多謝你願意留少少時間畀自己，了解吓自己嘅精神健康狀態！🌤️」
                 </p>
-                <p class="text-xs text-slate-300 leading-relaxed mt-2">
-                    以下為心靈天氣分析，大約 2-3 分鐘完成。請好好回想一下<b>過去兩個星期</b>，你有幾頻密受以下嘅情況困擾？憑直覺填寫就可以。
+                <p class="text-[11px] text-blue-200/80 italic mt-1 leading-relaxed">
+                    "No matter how things have been lately, thank you for taking a moment for yourself to check in on your mental well-being!"
                 </p>
-                <hr class="border-blue-500/20 my-2">
-                <div class="text-[11px] text-blue-300/70 italic leading-relaxed">
-                    "No matter how today went, thank you for taking a moment for yourself to check in on your mental well-being! 🌤️<br>Below is the mental weather screening, taking about 2-3 minutes to complete. Please recall the past 2 weeks and answer intuitively."
+                <div class="mt-4 pt-3 border-t border-blue-500/20">
+                    <p class="text-xs text-slate-300">以下為心靈天氣分析，大約只需 2-3 分鐘完成。請好好回想一下<b>過去兩個星期</b>，你有幾頻密受以下嘅情況困擾？憑直覺填寫就可以。</p>
+                    <p class="text-[10px] text-slate-400 italic mt-1">Below is the mental weather screening, taking about 2-3 minutes to complete. Please recall the past 2 weeks and answer intuitively.</p>
                 </div>
             </div>
 
             <div class="glass p-4 sm:p-5 rounded-3xl border border-blue-500/20">
-                <div class="space-y-6" id="phq9-container">
-                    </div>
-
-                <button onclick="calcResult()" class="w-full mt-8 bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl text-xs transition shadow-lg">
+                <div class="space-y-6" id="phq9-container"></div>
+                <button onclick="calcResult()" class="w-full mt-8 bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl text-xs transition shadow-lg uppercase tracking-wider">
                     查看心靈天氣分析報告 / View Report
                 </button>
-
                 <div id="quiz-output" class="hidden mt-6 p-5 rounded-2xl border text-xs leading-relaxed"></div>
             </div>
             
             <div class="bg-blue-500/5 p-4 rounded-xl text-[10px] text-slate-400 italic leading-relaxed border border-white/5 space-y-1.5">
-                <p>⚠️ 備註：此自我評估問卷基於臨床通用篩視指標（PHQ-9），僅供初步覺察心靈天氣之用，並不能取代專業醫療診斷。如果你得分較高，或感到持續困擾，請務必尋找合適的專業人士（如註冊心理學家或精神科醫生）作進一步正式評估。</p>
-                <p class="opacity-70">Note: This screening is based on the clinical PHQ-9 standard for self-awareness only. It is not a substitute for clinical psychiatric or psychological diagnosis. Please consult qualified medical professionals if needed.</p>
+                <p>⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。</p>
+                <p class="opacity-70">Notice: This analysis result is for reference only and is not a substitute for formal clinical diagnosis by a psychologist or doctor.</p>
             </div>
         </section>
 
@@ -354,14 +239,16 @@
                     「當你感到心靈負荷太重，唔需要一個人硬撐。呢度有一啲 24 小時守候嘅專業熱線同文字支援，隨時有人準備好聽你傾訴。 🤝」
                 </p>
                 <p class="text-[11px] text-orange-300/70 italic mt-1 leading-relaxed">
-                    "When your mind feels too heavy, you don't have to carry it alone. Here are resources with someone ready to listen."
+                    "When your mind feels too heavy, you don't have to carry it alone. Someone is always ready to listen."
                 </p>
                 
                 <div class="mt-4 p-4 bg-red-500/20 rounded-xl border border-red-500/30">
-                    <p class="text-[11px] text-red-200 leading-relaxed">
-                        🚨 <b>緊急求助安全備註 / EMERGENCY NOTICE：</b><br>
-                        如果你此刻有任何自殺、傷害自己，或者傷害他人嘅想法，又或者正面對任何即時生命危險與緊急情況，請立即撥打 <b class="text-red-400 text-sm font-bold">999</b> 報警求助，或者即刻去附近醫院嘅急症室。生命非常寶貴，請交給緊急專業人士即時支援。<br>
-                        <span class="text-red-300/60 block mt-1">If you are currently experiencing thoughts of suicide, self-harm, harming others, or facing any immediate emergencies, please call <b>999</b> or proceed to the nearest A&E department immediately. Your life is precious.</span>
+                    <p class="text-[11px] text-red-200 leading-relaxed font-bold">
+                        🚨 緊急求助安全備註 / EMERGENCY NOTICE：
+                    </p>
+                    <p class="text-[11px] text-red-200 leading-relaxed mt-1">
+                        如果你此刻有任何自殺、傷害自己，或者傷害他人嘅想法，又或者正面對任何即時生命危險與緊急情況，請立即撥打 <b class="text-red-400 text-sm">999</b> 報警求助，或者即刻去附近醫院嘅急症室。<br>
+                        <span class="opacity-70 italic">If you are experiencing thoughts of suicide or self-harm, please call 999 or proceed to the nearest A&E immediately. Your life is precious.</span>
                     </p>
                 </div>
             </div>
@@ -369,110 +256,27 @@
             <div class="pt-2">
                 <h3 class="text-xs font-bold text-orange-400 px-2 mb-3 uppercase tracking-widest">📞 24小時求助熱線 / 24-hr Hotlines</h3>
                 <div class="grid gap-3">
-                    <a href="tel:18288" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">明愛向晴軒 / Caritas Crisis Line</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時家庭危機支援熱線 / 24-hr Family Crisis Support</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">18288</p>
-                    </a>
-                    <a href="tel:24667350" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">醫院管理局 / Hospital Authority</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時精神健康專線 / 24-hr Mental Health Direct</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">2466 7350</p>
-                    </a>
-                    <a href="tel:23432255" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">社會福利署 / Social Welfare Dept</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時社署熱線服務 / 24-hr SWD Hotline Services</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">2343 2255</p>
-                    </a>
-                    <a href="tel:23820000" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">生命熱線 / Suicide Prevention</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時預防自殺情緒支援 / 24-hr Suicide Prevention Support</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">2382 0000</p>
-                    </a>
-                    <a href="tel:23892222" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">香港撒瑪利亞防止自殺會 / SBHK</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時防止自殺熱線 / 24-hr Emotional Crisis Hotline</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">2389 2222</p>
-                    </a>
-                    <a href="tel:28960000" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">撒瑪利亞會 / The Samaritans</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時中文及多語言防止自殺熱線 / 24-hr Multi-lingual Line</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">2896 0000</p>
-                    </a>
-                </div>
-            </div>
-
-            <div class="pt-4 border-t border-white/5">
-                <div class="mb-4 px-2">
-                    <h3 class="text-xs font-bold text-purple-400 uppercase tracking-widest">🫂 特定群體支援 / Specific Groups</h3>
-                    <p class="text-[10px] text-slate-500 mt-2 leading-relaxed">
-                        如果你覺得一般熱線未必完全明白你嘅處境，或者你正為特定嘅身分感到壓力，呢度有一啲專為特定群體而設嘅支援服務。總有人明白你嘅難處。<br>
-                        <span class="italic block mt-1 text-[9px]">If you feel general hotlines might not fully grasp your situation, or if you're facing stress tied to a specific identity, here are support services tailored for you.</span>
-                    </p>
-                </div>
-                <div class="grid gap-3">
-                    <a href="https://wa.me/85291012012?text=你好，我想尋求情緒支援" target="_blank" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">Open 噏 / OpenUp</p>
-                            <p class="text-[10px] text-slate-400 mt-1">24小時 6-24歲 不記名 WhatsApp 文字情緒輔導<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hr anonymous text counseling for youth aged 6-24</span></p>
-                        </div>
+                    <a href="https://wa.me/85291012012" target="_blank" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
+                        <div><p class="font-bold text-sm text-slate-100">Open 噏 / OpenUp</p><p class="text-[10px] text-slate-500 mt-1">24小時 6-24歲 不記名 WhatsApp 文字輔導</p></div>
                         <div class="text-emerald-400 shrink-0"><i class="fa-brands fa-whatsapp text-2xl"></i></div>
                     </a>
-
-                    <a href="tel:31610102" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">明愛財困壓力專線 / Financial Crisis Line</p>
-                            <p class="text-[10px] text-slate-400 mt-1">24小時 註冊社工接聽，處理債務、破產、理財困擾與心理輔導<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hr debt and financial stress counseling by registered social workers.</span></p>
-                        </div>
-                        <p class="text-purple-400 font-bold font-mono text-base">3161 0102</p>
-                    </a>
-
-                    <a href="tel:182183" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">社會福利署「照顧者支援專線」 / Carer Support Line</p>
-                            <p class="text-[10px] text-slate-400 mt-1"><b>對象 / Target：</b> 護老者、殘疾人士照顧者 (24小時全天候專線)<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hour professional social workers supporting elderly and disability carers.</span></p>
-                        </div>
-                        <p class="text-purple-400 font-bold font-mono text-base">182 183</p>
-                    </a>
-
-                    <a href="tel:22175959" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">東華三院「同．線」 / TWGHs Pride Line</p>
-                            <p class="text-[10px] text-slate-400 mt-1"><b>對象 / Target：</b> 性/別小眾 (LGBTQ+) 及其家人朋友 (24小時)<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hour sexual and gender minority counseling and family support line.</span></p>
-                        </div>
-                        <p class="text-purple-400 font-bold font-mono text-base">2217 5959</p>
-                    </a>
-
-                    <a href="tel:18281" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">芷若園 / CEASE Crisis Centre</p>
-                            <p class="text-[10px] text-slate-400 mt-1"><b>對象 / Target：</b> 家庭暴力、遭受性暴力之受害人 (24小時)<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hour crisis intervention for victims of domestic or sexual violence.</span></p>
-                        </div>
-                        <p class="text-purple-400 font-bold font-mono text-base">18281</p>
-                    </a>
+                    <a href="tel:18288" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500"><div><p class="font-bold text-sm text-slate-100">明愛向晴軒 / Family Crisis</p></div><p class="text-orange-400 font-bold font-mono text-base">18288</p></a>
+                    <a href="tel:24667350" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500"><div><p class="font-bold text-sm text-slate-100">醫管局 / HA Mental Health</p></div><p class="text-orange-400 font-bold font-mono text-base">2466 7350</p></a>
+                    <a href="tel:23820000" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500"><div><p class="font-bold text-sm text-slate-100">生命熱線 / Suicide Prev.</p></div><p class="text-orange-400 font-bold font-mono text-base">2382 0000</p></a>
                 </div>
             </div>
 
             <div class="pt-4 border-t border-white/5">
-                <h3 class="text-xs font-bold text-blue-400 px-2 mb-3 uppercase tracking-widest">📖 更多精神健康資訊 / More Info</h3>
+                <div class="mb-4 px-2"><h3 class="text-xs font-bold text-purple-400 uppercase tracking-widest">🫂 特定群體支援 / Specific Groups</h3></div>
+                <div class="grid gap-3">
+                    <a href="tel:31610102" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500"><div><p class="font-bold text-sm text-slate-100">明愛財困壓力專線</p><p class="text-[10px] text-slate-500 mt-1">24小時債務理財情緒輔導</p></div><p class="text-purple-400 font-bold font-mono text-base">3161 0102</p></a>
+                    <a href="tel:182183" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500"><div><p class="font-bold text-sm text-slate-100">社署照顧者支援專線</p><p class="text-[10px] text-slate-500 mt-1">24小時護老及殘疾照顧者支援</p></div><p class="text-purple-400 font-bold font-mono text-base">182 183</p></a>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/5">
                 <a href="https://shallwetalk.hk/" target="_blank" class="glass bg-blue-500/5 p-5 rounded-2xl flex justify-between items-center hover:bg-blue-600/10 transition border border-blue-500/20">
-                    <div>
-                        <p class="font-bold text-sm text-blue-100">Shall We Talk / 陪我講</p>
-                        <p class="text-[10px] text-slate-400 mt-1">政府精神健康諮詢委員會教育平台 / Official Platform</p>
-                        <p class="text-[10px] text-slate-500 mt-0.5">提供豐富心理文章及全港社區支援中心名單 / Educational articles & directory</p>
-                    </div>
+                    <div><p class="font-bold text-sm text-blue-100">Shall We Talk / 陪我講</p><p class="text-[10px] text-slate-400 mt-1">政府精神健康教育平台 / Official Platform</p></div>
                     <div class="text-blue-400 shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-lg"></i></div>
                 </a>
             </div>
@@ -481,39 +285,33 @@
     </main>
 
     <footer class="px-8 text-center opacity-20 text-[9px] mt-6 leading-relaxed">
-        <p>本網頁資訊僅供參考，不構成專業醫療或診斷建議。<br>Information is for reference only and does not constitute medical advice.</p>
-        <p class="mt-2">© 2026 用一程的士嘅空間，畀自己好好唞一唞 | 願你平安</p>
+        <p>© 2026 用一程的士嘅空間，畀自己好好唞一唞 | 願你平安</p>
     </footer>
 
     <script>
-        // Tab Management
         function showTab(tabName, color) {
             document.querySelectorAll('section').forEach(s => s.classList.add('hidden-section'));
             document.getElementById('section-' + tabName).classList.remove('hidden-section');
-            
             document.querySelectorAll('.tab-btn').forEach(b => {
                 b.classList.remove('tab-active-red', 'tab-active-green', 'tab-active-blue', 'tab-active-orange');
             });
             const activeTab = document.getElementById('tab-' + tabName);
             activeTab.classList.add('tab-active-' + color);
-
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Accordion Management
         function toggleAccordion(id) {
             const content = document.getElementById('content-' + id);
             const arrow = document.getElementById('arrow-' + id);
-            if (content.classList.contains('hidden')) {
+            if (content && content.classList.contains('hidden')) {
                 content.classList.remove('hidden');
                 arrow.classList.add('rotate-180');
-            } else {
+            } else if (content) {
                 content.classList.add('hidden');
                 arrow.classList.remove('rotate-180');
             }
         }
 
-        // PHQ-9 Dual-Language Questions Array
         const phq9Questions = [
             { zh: "做事缺乏興趣或者覺得毫無樂趣", en: "Little interest or pleasure in doing things" },
             { zh: "感到心情低落、抑鬱、沮喪或絕望", en: "Feeling down, depressed, or hopeless" },
@@ -521,100 +319,35 @@
             { zh: "覺得疲倦、虛脫或缺乏活力", en: "Feeling tired or having little energy" },
             { zh: "食慾不振，或者進食過量", en: "Poor appetite or overeating" },
             { zh: "對自己感到不滿—覺得自己很失敗，或者令自己或家人失望", en: "Feeling bad about yourself — or that you are a failure" },
-            { zh: "難以集中精神做事（例如看報紙、電視或工作）", en: "Trouble concentrating on things, like reading or work" },
+            { zh: "難以集中精神做事（例如看報紙、電視或工作）", en: "Trouble concentrating on things" },
             { zh: "別人察覺到你行動或說話變得遲緩；或相反，你比平時煩躁不安、走來走去", en: "Moving/speaking slowly, or being overly restless and fidgety" },
             { zh: "有不如死掉算，或者想用某種方式傷害自己嘅念頭", en: "Thoughts that you would be better off dead or hurting yourself" }
         ];
         
         let quizScores = {};
         const container = document.getElementById('phq9-container');
-        
         phq9Questions.forEach((q, index) => {
-            let i = index + 1;
-            quizScores[i] = null;
+            let i = index + 1; quizScores[i] = null;
             container.innerHTML += `
                 <div class="space-y-2.5 pb-4 border-b border-white/5 last:border-0 last:pb-0">
-                    <p class="text-[11px] text-slate-200 leading-relaxed">
-                        <span class="text-blue-400 font-bold">${i}.</span> ${q.zh}
-                        <span class="text-slate-500 block text-[10px] mt-0.5">${q.en}</span>
-                    </p>
+                    <p class="text-[11px] text-slate-200 leading-relaxed"><span class="text-blue-400 font-bold">${i}.</span> ${q.zh}<span class="text-slate-500 block text-[10px] mt-0.5">${q.en}</span></p>
                     <div class="grid grid-cols-4 gap-1.5 text-[10px]">
                         <button onclick="setScore(${i}, 0, this)" class="q-btn-${i} border border-slate-700 rounded-lg py-1.5 hover:border-blue-500 text-slate-400 transition">從不<br><span class="opacity-40">Not at all</span></button>
                         <button onclick="setScore(${i}, 1, this)" class="q-btn-${i} border border-slate-700 rounded-lg py-1.5 hover:border-blue-500 text-slate-400 transition">幾天<br><span class="opacity-40">Several days</span></button>
                         <button onclick="setScore(${i}, 2, this)" class="q-btn-${i} border border-slate-700 rounded-lg py-1.5 hover:border-blue-500 text-slate-400 transition">一半<br><span class="opacity-40">More half</span></button>
                         <button onclick="setScore(${i}, 3, this)" class="q-btn-${i} border border-slate-700 rounded-lg py-1.5 hover:border-blue-500 text-slate-400 transition">天天<br><span class="opacity-40">Nearly daily</span></button>
                     </div>
-                </div>
-            `;
+                </div>`;
         });
 
         function setScore(qNum, score, btn) {
             quizScores[qNum] = score;
-            document.querySelectorAll('.q-btn-' + qNum).forEach(b => {
-                b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500');
-            });
+            document.querySelectorAll('.q-btn-' + qNum).forEach(b => { b.classList.remove('bg-blue-600', 'text-white', 'border-blue-500'); });
             btn.classList.add('bg-blue-600', 'text-white', 'border-blue-500');
         }
 
-        // Calculation Outputs (100% Fully Bilingual)
         function calcResult() {
-            if (Object.values(quizScores).includes(null)) {
-                alert('請先完成所有問題，等我可以提供最合適嘅建議。 Please answer all questions first!'); return;
-            }
+            if (Object.values(quizScores).includes(null)) { alert('請完成所有問題。 Please answer all questions!'); return; }
             const total = Object.values(quizScores).reduce((a, b) => a + b, 0);
-            const q9Score = quizScores[9]; 
-            const out = document.getElementById('quiz-output');
-            out.classList.remove('hidden');
-
-            const medicalDisclaimer = `<p class="mt-4 pt-3 border-t border-white/10 text-[9px] text-slate-500">⚠️ 備註：此測試為臨床認可的 PHQ-9 評估。問卷結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。 / Note: This PHQ-9 screening is for self-awareness only, not a substitute for clinical diagnosis.</p>`;
-
-            // Q9 Triggered (Suicidal warning)
-            if (q9Score > 0) {
-                out.className = "mt-6 p-5 rounded-2xl border border-red-500/50 bg-red-500/10 text-xs space-y-3";
-                out.innerHTML = `
-                    <p class="font-bold text-red-400 text-sm">❤️ 請停一停，給自己一個被陪伴嘅機會 / Please pause and allow us to be there for you</p>
-                    <p class="text-slate-200">留意到你剛才提及腦海中出現過傷害自己嘅念頭。不論此刻你正承受幾大嘅痛苦，請相信你絕對不需要獨自去面對。</p>
-                    <p class="text-white font-bold">建議你立刻點擊「💌 搵人傾吓」版面聯絡 24小時輔導熱線，或直接致電 999 尋求緊急支援。你嘅生命好寶貴，請留給專業人士一個支援你嘅機會。</p>
-                    <hr class="border-red-500/20 my-2">
-                    <p class="text-slate-300 italic">We notice that thoughts of self-harm have crossed your mind. No matter how dark it feels, you do not have to carry this alone. Please visit the "Talk to Someone" tab immediately to connect with 24-hr hotlines, or call 999 for instant crisis intervention. Your life is immensely precious.</p>
-                    ${medicalDisclaimer}
-                `;
-                return;
-            }
-
-            // High Score Trigger (>=10)
-            if (total >= 10) {
-                out.className = "mt-6 p-5 rounded-2xl border border-orange-500/30 bg-orange-500/5 text-xs space-y-3";
-                out.innerHTML = `
-                    <p class="font-bold text-orange-400 text-sm">分析報告：目前心靈天氣正遭遇雨天 🌧️ (Score: ${total})</p>
-                    <p class="text-slate-200 font-bold">"Your Mind Weather: Rainy Day — High distress detected."</p>
-                    <p class="text-slate-200">得分顯示你最近正承受住沉重嘅情緒負荷。請記得：<span class="text-white font-bold">尋求協助係勇敢嘅表現，唔係軟弱。</span></p>
-                    <p class="text-slate-300">建議你在這一程車程中，嘗試打開第二分頁進行「放鬆練習」。<b>可以嘗試搵輔導員或社工傾吓。</b>若這種低落狀態已持續超過兩週，我非常建議你尋找合適的專業人士（如註冊臨床心理學家或精神科醫生）為你作進一步嘅全面評估。你亦可以隨時致電「💌 搵人傾吓」入面的熱線跟專業人員傾訴。</p>
-                    <p class="text-slate-400 italic mt-1">Your score suggests significant stress. Seeking help is a sign of immense courage, not weakness. Try the exercises under the "Relaxation" tab, <b>or consider talking to a counselor or social worker.</b> If this mood persists for over 2 weeks, we strongly advise consulting clinical psychologists or psychiatrists for professional evaluation.</p>
-                    ${medicalDisclaimer}
-                `;
-            } else if (total >= 5) { // Mild Score (5-9)
-                out.className = "mt-6 p-5 rounded-2xl border border-yellow-500/30 bg-yellow-500/5 text-xs space-y-3";
-                out.innerHTML = `
-                    <p class="font-bold text-yellow-400 text-sm">分析報告：目前心靈天氣多雲微雨 ☁️ (Score: ${total})</p>
-                    <p class="text-slate-200 font-bold">"Your Mind Weather: Cloudy with Light Rain — Mild stress detected."</p>
-                    <p class="text-slate-200">你最近可能面對住不少生活壓力，心靈可能有點累了。</p>
-                    <p class="text-slate-300">趁著這段搭車的時間，不妨打開「🌿 放鬆練習」試做深呼吸或接地練習。讓緊繃的神經適度休息一下，也可以找信任的人聊聊天抒發感受。</p>
-                    <p class="text-slate-400 italic mt-1">You might be under noticeable pressure lately, and your mind is feeling tired. Take this taxi ride to try out the breathing or grounding exercises in the "Relaxation" tab. Let your nerves rest, or chat with a trusted friend to vent your feelings.</p>
-                    ${medicalDisclaimer}
-                `;
-            } else { // Healthy Score (0-4)
-                out.className = "mt-6 p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 text-xs space-y-3";
-                out.innerHTML = `
-                    <p class="font-bold text-emerald-400 text-sm">分析報告：目前心靈天氣正值晴朗 ☀️ (Score: ${total})</p>
-                    <p class="text-slate-200 font-bold">"Your Mind Weather: Clear Skies — Your emotional state is stable."</p>
-                    <p class="text-slate-200">你目前的情緒狀態與心理韌性正處於健康穩定的範圍內！</p>
-                    <p class="text-slate-300">生活難免有顛簸，在未來的日子裡當你再次感到疲倦，本站上的「🌿 放鬆練習」隨時歡迎你回來給心靈充充電。祝你今日旅途愉快，平安順心！</p>
-                    <p class="text-slate-400 italic mt-1">Your emotional resilience is in a very stable and healthy range! Life has ups and downs; whenever you feel drained in the future, the exercises here are always available for a quick mental recharge. Have a safe and peaceful journey today!</p>
-                    ${medicalDisclaimer}
-                `;
-            }
-        }
-    </script>
-</body>
-</html>
+            const q9 = quizScores[9]; const out = document.getElementById('quiz-output'); out.classList.remove('hidden');
+            const medicalNote = `<p class="mt-4 pt-3 border-t border-white/10 text-[9px] text-slate-500">⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。
