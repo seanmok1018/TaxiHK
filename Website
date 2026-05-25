@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下一站・唞唞 | 你的專屬車廂樹窿</title>
+    <!-- 引入 Tailwind CSS 進行排版 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts (Noto Sans HK) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入 FontAwesome 圖示 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Sans HK', sans-serif;
+            /* 這裡設定網頁的背景圖片！ */
+            /* 你可以將 url() 裡面的連結換成你上傳到網上的那張「十字路口的士」圖片 */
+            background-image: url('https://images.unsplash.com/photo-1572099307773-455b70d4ab53?q=80&w=1000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        /* 玻璃透視效果 (Glassmorphism) */
+        .glass-card {
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-button {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .glass-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-100 flex justify-center">
+    <!-- 整個網頁的黑色半透明遮罩，確保文字清楚 -->
+    <div class="fixed inset-0 bg-black/50 z-0"></div>
+
+    <!-- 主要內容區 (限制寬度，營造手機 App 感覺) -->
+    <div class="relative z-10 w-full max-w-md px-5 py-10 flex flex-col gap-6">
+        
+        <!-- 頂部：標題與問候語 -->
+        <header class="text-center space-y-3 mt-4 mb-2">
+            <div class="inline-block glass-card px-4 py-1 rounded-full text-amber-400 text-sm tracking-widest mb-2 border-amber-500/30">
+                TAXI ON THE CROSSROADS
+            </div>
+            <h1 class="text-4xl font-bold tracking-wider text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+                下一站・唞唞
+            </h1>
+            <p class="text-slate-300 text-sm leading-relaxed mt-4 px-2">
+                車廂唞啖氣，無論生活幾難，總有出路。<br>
+                歡迎你喺呢段車程，好好休息一下。
+            </p>
+        </header>
+
+        <!-- 第一部分：情緒支援資源 (核心) -->
+        <section class="glass-card rounded-2xl p-5 shadow-2xl">
+            <h2 class="text-lg font-semibold text-teal-300 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-hand-holding-heart"></i> 24小時情緒支援熱線
+            </h2>
+            
+            <div class="space-y-3">
+                <!-- 撒瑪利亞防止自殺會 -->
+                <a href="tel:23892222" class="glass-button rounded-xl p-4 flex justify-between items-center group">
+                    <div>
+                        <h3 class="font-medium text-white text-base">撒瑪利亞防止自殺會</h3>
+                        <p class="text-xs text-slate-400 mt-1">傾訴及情緒支援</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </a>
+
+                <!-- 生命熱線 -->
+                <a href="tel:23820000" class="glass-button rounded-xl p-4 flex justify-between items-center group">
+                    <div>
+                        <h3 class="font-medium text-white text-base">生命熱線</h3>
+                        <p class="text-xs text-slate-400 mt-1">24小時預防自殺熱線</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </a>
+
+                <!-- 明愛向晴軒 -->
+                <a href="tel:18288" class="glass-button rounded-xl p-4 flex justify-between items-center group">
+                    <div>
+                        <h3 class="font-medium text-white text-base">明愛向晴軒</h3>
+                        <p class="text-xs text-slate-400 mt-1">家庭危機支援</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </a>
+
+                <!-- Open Up (WhatsApp) -->
+                <a href="https://wa.me/85291012012" target="_blank" class="glass-button rounded-xl p-4 flex justify-between items-center group border-green-500/30">
+                    <div>
+                        <h3 class="font-medium text-white text-base">Open Up 網上輔導</h3>
+                        <p class="text-xs text-slate-400 mt-1">24小時 WhatsApp 文字傾訴</p>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 第二部分：的士聯絡方法 -->
+        <section class="glass-card rounded-2xl p-5 shadow-2xl border-t-4 border-t-amber-500">
+            <h2 class="text-lg font-semibold text-amber-400 mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-taxi"></i> 你的專屬車長
+            </h2>
+            <p class="text-sm text-slate-300 mb-5">如果你下次需要一個安靜、安全嘅車程，隨時搵我。我哋下一站見。</p>
+            
+            <!-- 將這裡的 85212345678 換成你的真實電話號碼 -->
+            <a href="https://wa.me/85212345678?text=司機你好，我想預約的士" target="_blank" 
+               class="block w-full bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold text-center py-4 rounded-xl transition shadow-lg flex justify-center items-center gap-2">
+                <i class="fa-brands fa-whatsapp text-xl"></i> 一鍵 WhatsApp 預約
+            </a>
+        </section>
+
+        <!-- 頁尾免責聲明 -->
+        <footer class="text-center mt-6 pb-6">
+            <p class="text-xs text-slate-500 leading-relaxed px-4">
+                免責聲明：本網頁提供的資源僅供參考，不能代替專業醫療建議。如遇緊急情況，請立即致電 999 報警或前往急症室。<br>
+                <span class="mt-2 block">&copy; 2026 下一站唞唞. 願你平安.</span>
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
