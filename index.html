@@ -42,7 +42,7 @@
             <button onclick="showTab('quiz', 'blue')" id="tab-quiz" class="tab-btn pb-3 px-2 shrink-0 text-[11px] font-medium text-center">
                 🌤️ 最近好嗎？<br><span class="text-[8px] font-normal opacity-50 block mt-0.5">How Are You?</span>
             </button>
-            <button onclick="showTab('help', 'orange')" id="tab-help" class="tab-btn pb-3 px-2 shrink-0 text-[11px] font-medium text-center">
+            <button onclick="showTab('help', 'orange')" id="tab-help" class="tab-btn pb-3 px-2 shrink-0 hobbies text-[11px] font-medium text-center">
                 💌 搵人傾吓<br><span class="text-[8px] font-normal opacity-50 block mt-0.5">Talk to Someone</span>
             </button>
         </nav>
@@ -146,7 +146,7 @@
                     <button onclick="toggleAccordion('ex1')" class="w-full p-5 flex justify-between items-center text-left hover:bg-white/5 transition focus:outline-none">
                         <div>
                             <p class="font-bold text-sm text-slate-100">🌬️ 腹式呼吸 / Box Breathing</p>
-                            <p class="text-[10px] text-emerald-400/80 mt-1">快速平靜心跳，舒緩突如其來的焦慮緊張</p>
+                            <p class="text-[10px] text-emerald-400/80 mt-1">快速平靜心跳，舒緩突如其來的焦慮緊張 / Calms heart rate and acute anxiety.</p>
                         </div>
                         <i id="arrow-ex1" class="fa-solid fa-chevron-down text-emerald-500 text-xs transition-transform duration-200"></i>
                     </button>
@@ -239,12 +239,15 @@
         <section id="section-quiz" class="hidden-section space-y-6">
             <div class="bg-blue-500/10 p-6 rounded-3xl border-l-4 border-blue-500 shadow-sm gentle-gradient">
                 <p class="text-sm text-blue-100 leading-relaxed font-bold">
-                    「無論最近過成點，都好多謝你願意留少少時間畀自己，了解吓自己嘅精神健康狀態！ 🌤️」<br>
-                    <span class="text-[11px] text-blue-200/80 font-normal mt-1 block">"No matter how things have been lately, thank you for taking a moment for yourself to check in on your mental well-being!"</span>
+                    「無論最近過成點，都好多謝你願意留少少時間畀自己，了解吓自己嘅精神健康狀態！ 🌤️」
                 </p>
                 <p class="text-xs text-slate-300 leading-relaxed mt-4">
                     以下為心靈天氣分析，大約只需 2-3 分鐘完成。請好好回想一下<b>過去兩個星期</b>，你有幾頻密受以下嘅情況困擾？憑直覺填寫就可以。<br>
                     <span class="text-[10px] text-slate-400 mt-1 block">Below is the mental weather screening, taking about 2-3 minutes to complete. Please recall the <b>past 2 weeks</b> and answer intuitively.</span>
+                </p>
+                <hr class="border-blue-500/10 my-2">
+                <p class="text-[10px] text-blue-300/60 italic leading-relaxed">
+                    "No matter how things have been lately, thank you for taking a moment for yourself to check in on your mental well-being!"
                 </p>
             </div>
 
@@ -257,8 +260,8 @@
             </div>
             
             <div class="bg-blue-500/5 p-4 rounded-xl text-[10px] text-slate-400 italic leading-relaxed border border-white/5 space-y-1.5">
-                <p>⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。</p>
-                <p class="opacity-70">Notice: This analysis is for reference only and is not a substitute for clinical diagnosis by professionals.</p>
+                <p>⚠️ 備註：此自我評估問卷基於臨床通用指標（PHQ-9），僅供初步覺察之用，並不能取代專業醫療診斷。如果你得分較高，請務必尋找專業人士（如註冊心理學家或精神科醫生）作正式評估。</p>
+                <p class="opacity-70">Notice: This screening is based on the clinical PHQ-9 standard for self-awareness only. It is not a substitute for clinical diagnosis. Please consult qualified medical professionals if needed.</p>
             </div>
         </section>
 
@@ -283,26 +286,12 @@
             <div class="pt-2">
                 <h3 class="text-xs font-bold text-orange-400 px-2 mb-3 uppercase tracking-widest">📞 24小時求助熱線 / 24-hr Hotlines</h3>
                 <div class="grid gap-3">
-                    <a href="https://wa.me/85291012012?text=你好，我想尋求情緒支援" target="_blank" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">Open 噏 / OpenUp</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時 6-24歲 不記名 WhatsApp 文字情緒輔導<br>24-hr anonymous text counseling for youth aged 6-24</p>
-                        </div>
-                        <div class="text-emerald-400 shrink-0"><i class="fa-brands fa-whatsapp text-2xl"></i></div>
-                    </a>
                     <a href="tel:18288" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
                         <div>
                             <p class="font-bold text-sm text-slate-100">明愛向晴軒 / Caritas Crisis Line</p>
                             <p class="text-[10px] text-slate-500 mt-1">24小時家庭危機支援熱線 / 24-hr Family Crisis Support</p>
                         </div>
                         <p class="text-orange-400 font-bold font-mono text-base">18288</p>
-                    </a>
-                    <a href="tel:31610102" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
-                        <div>
-                            <p class="font-bold text-sm text-slate-100">明愛財困壓力專線 / Financial Crisis Line</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時註冊社工接聽，處理債務及理財困擾 / 24-hr Counseling</p>
-                        </div>
-                        <p class="text-orange-400 font-bold font-mono text-base">3161 0102</p>
                     </a>
                     <a href="tel:24667350" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
                         <div>
@@ -311,12 +300,33 @@
                         </div>
                         <p class="text-orange-400 font-bold font-mono text-base">2466 7350</p>
                     </a>
+                    <a href="tel:23432255" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
+                        <div>
+                            <p class="font-bold text-sm text-slate-100">社會福利署 / Social Welfare Dept</p>
+                            <p class="text-[10px] text-slate-500 mt-1">24小時社署熱線服務 / 24-hr SWD Hotline Services</p>
+                        </div>
+                        <p class="text-orange-400 font-bold font-mono text-base">2343 2255</p>
+                    </a>
                     <a href="tel:23820000" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
                         <div>
                             <p class="font-bold text-sm text-slate-100">生命熱線 / Suicide Prevention</p>
-                            <p class="text-[10px] text-slate-500 mt-1">24小時預防自殺情緒支援 / 24-hr Support</p>
+                            <p class="text-[10px] text-slate-500 mt-1">24小時預防自殺情緒支援 / 24-hr Suicide Support</p>
                         </div>
                         <p class="text-orange-400 font-bold font-mono text-base">2382 0000</p>
+                    </a>
+                    <a href="tel:23892222" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
+                        <div>
+                            <p class="font-bold text-sm text-slate-100">香港撒瑪利亞防止自殺會 / SBHK</p>
+                            <p class="text-[10px] text-slate-500 mt-1">24小時防止自殺情緒熱線 / 24-hr Crisis Hotline</p>
+                        </div>
+                        <p class="text-orange-400 font-bold font-mono text-base">2389 2222</p>
+                    </a>
+                    <a href="tel:28960000" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-orange-500">
+                        <div>
+                            <p class="font-bold text-sm text-slate-100">撒瑪利亞會 / The Samaritans</p>
+                            <p class="text-[10px] text-slate-500 mt-1">24小時中文及多語言防止自殺熱線 / 24-hr Multi-lingual Line</p>
+                        </div>
+                        <p class="text-orange-400 font-bold font-mono text-base">2896 0000</p>
                     </a>
                 </div>
             </div>
@@ -330,10 +340,26 @@
                     </p>
                 </div>
                 <div class="grid gap-3">
+                    <a href="https://wa.me/85291012012?text=你好，我想尋求情緒支援" target="_blank" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
+                        <div>
+                            <p class="font-bold text-sm text-slate-100">Open 噏 / OpenUp</p>
+                            <p class="text-[10px] text-slate-400 mt-1">24小時 6-24歲 不記名 WhatsApp 文字情緒輔導<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hr anonymous text counseling for youth aged 6-24</span></p>
+                        </div>
+                        <div class="text-emerald-400 shrink-0"><i class="fa-brands fa-whatsapp text-2xl"></i></div>
+                    </a>
+
+                    <a href="tel:31610102" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
+                        <div>
+                            <p class="font-bold text-sm text-slate-100">明愛財困壓力專線 / Financial Crisis Line</p>
+                            <p class="text-[10px] text-slate-400 mt-1">24小時 註冊社工接聽，處理債務、破產、理財困擾與心理輔導<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hr debt and financial stress counseling by social workers.</span></p>
+                        </div>
+                        <p class="text-purple-400 font-bold font-mono text-base">3161 0102</p>
+                    </a>
+
                     <a href="tel:182183" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
                         <div>
-                            <p class="font-bold text-sm text-slate-100">社會福利署照顧者專線 / Carer Support</p>
-                            <p class="text-[10px] text-slate-400 mt-1"><b>對象 / Target：</b> 護老者、殘疾人士照顧者 (24小時)<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hr professional support for all caregivers.</span></p>
+                            <p class="font-bold text-sm text-slate-100">社會福利署「照顧者支援專線」 / Carer Support</p>
+                            <p class="text-[10px] text-slate-400 mt-1"><b>對象 / Target：</b> 護老者、殘疾人士照顧者 (24小時全天候專線)<br><span class="text-[9px] text-slate-500 block mt-0.5">24-hour professional social workers supporting caregivers.</span></p>
                         </div>
                         <p class="text-purple-400 font-bold font-mono text-base">182 183</p>
                     </a>
@@ -345,6 +371,18 @@
                         <p class="text-purple-400 font-bold font-mono text-base">2217 5959</p>
                     </a>
                 </div>
+            </div>
+
+            <div class="pt-4 border-t border-white/5">
+                <h3 class="text-xs font-bold text-blue-400 px-2 mb-3 uppercase tracking-widest">📖 更多精神健康資訊 / More Info</h3>
+                <a href="https://shallwetalk.hk/" target="_blank" class="glass bg-blue-500/5 p-5 rounded-2xl flex justify-between items-center hover:bg-blue-600/10 transition border border-blue-500/20">
+                    <div>
+                        <p class="font-bold text-sm text-blue-100">Shall We Talk / 陪我講</p>
+                        <p class="text-[10px] text-slate-400 mt-1">政府精神健康諮詢委員會教育平台 / Official Platform</p>
+                        <p class="text-[10px] text-slate-500 mt-0.5">提供豐富心理文章及全港社區支援中心名單 / Directory & Articles</p>
+                    </div>
+                    <div class="text-blue-400 shrink-0"><i class="fa-solid fa-arrow-up-right-from-square text-lg"></i></div>
+                </a>
             </div>
         </section>
 
@@ -386,7 +424,7 @@
             { zh: "覺得疲倦、虛脫或缺乏活力", en: "Feeling tired or having little energy" },
             { zh: "食慾不振，或者進食過量", en: "Poor appetite or overeating" },
             { zh: "對自己感到不滿—覺得自己很失敗，或者令自己或家人失望", en: "Feeling bad about yourself — or that you are a failure" },
-            { zh: "難以集中精神做事（例如看報紙、電視或工作）", en: "Trouble concentrating on things" },
+            { zh: "難以集中精神做事（例如看報紙、電視或工作）", en: "Trouble concentrating on things, like reading or work" },
             { zh: "別人察覺到你行動或說話變得遲緩；或相反，你比平時煩躁不安、走來走去", en: "Moving slowly, or being overly restless and fidgety" },
             { zh: "有不如死掉算，或者想用某種方式傷害自己嘅念頭", en: "Thoughts that you would be better off dead or hurting yourself" }
         ];
@@ -417,7 +455,9 @@
             if (Object.values(quizScores).includes(null)) { alert('請完成所有問題。 Please answer all questions!'); return; }
             const total = Object.values(quizScores).reduce((a, b) => a + b, 0);
             const q9 = quizScores[9]; const out = document.getElementById('quiz-output'); out.classList.remove('hidden');
-            const medicalDisclaimer = `<p class="mt-4 pt-3 border-t border-white/10 text-[9px] text-slate-500">⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。<br><span class="opacity-70">Note: This analysis is for reference only and is not a substitute for formal diagnosis.</span></p>`;
+            
+            // 按要求把結果內的備註微調為指定句子
+            const medicalDisclaimer = `<p class="mt-4 pt-3 border-t border-white/10 text-[9px] text-slate-500">⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。<br><span class="opacity-70">Note: This analysis is for reference only and is not a substitute for formal diagnosis by clinicians.</span></p>`;
 
             if (q9 > 0) {
                 out.className = "mt-6 p-5 rounded-2xl border border-red-500/50 bg-red-500/10 text-xs space-y-3";
@@ -425,13 +465,13 @@
             }
             if (total >= 10) {
                 out.className = "mt-6 p-5 rounded-2xl border border-orange-500/30 bg-orange-500/5 text-xs space-y-3";
-                out.innerHTML = `<p class="font-bold text-orange-400 text-sm">分析報告：目前心靈天氣正遭遇雨天 🌧️ (Score: ${total})</p><p class="text-slate-200">得分顯示你最近正承受住沉重嘅情緒負荷。請記得：<span class="text-white font-bold">尋求協助係勇敢嘅表現，唔係軟弱。</span></p><p class="text-slate-300">建議你打開第二分頁進行「放鬆練習」，你亦可以隨時致電「💌 搵人傾吓」入面的熱線跟專業人員傾訴。若這種低落狀態已持續超過兩週，我非常建議你尋找合適的專業人士（如註冊臨床心理學家或精神科醫生）為你作進一步嘅全面評估。</p><p class="italic text-slate-400 text-[10px]">Rainy Weather detected. We suggest trying the "Relaxation" exercises and calling the hotlines in the "Talk to Someone" tab. If this mood persists for over 2 weeks, we advise consulting clinical psychologists or psychiatrists for professional evaluation.</p>${medicalDisclaimer}`;
+                out.innerHTML = `<p class="font-bold text-orange-400 text-sm">分析報告：目前心靈天氣正遭遇雨天 🌧️ (Score: ${total})</p><p class="text-slate-200 font-bold">"Your Mind Weather: Rainy Day — High distress detected."</p><p class="text-slate-200">得分顯示你最近正承受住沉重嘅情緒負荷。</p><p class="text-slate-300">建議你打開第二分頁進行「放鬆練習」，你亦可以隨時致電「💌 搵人傾吓」入面的熱線跟專業人員傾訴。若這種低落狀態已持續超過兩週，我非常建議你尋找合適的專業人士（如註冊臨床心理學家或精神科醫生）為你作進一步嘅全面評估。</p><p class="italic text-slate-400 text-[10px]">Rainy Weather detected. We suggest trying the "Relaxation" exercises and calling the hotlines under the "Talk to Someone" tab. If this mood persists for over 2 weeks, we strongly advise consulting clinical psychologists or psychiatrists for professional evaluation.</p>${medicalDisclaimer}`;
             } else if (total >= 5) {
                 out.className = "mt-6 p-5 rounded-2xl border border-yellow-500/30 bg-yellow-500/5 text-xs space-y-3";
-                out.innerHTML = `<p class="font-bold text-yellow-400 text-sm">分析報告：目前心靈天氣多雲微雨 ☁️ (Score: ${total})</p><p class="text-slate-300">你最近可能面對住不少生活壓力，心靈可能有點累了。趁著這段搭車的時間，不妨打開「🌿 放鬆練習」試做深呼吸。也可以找信任的人聊聊天。<br><span class="italic block mt-2 text-slate-400 text-[10px]">Cloudy Skies detected. You might be under mild stress. Try the exercises in the "Relaxation" tab or chat with a trusted friend.</span></p>${medicalDisclaimer}`;
+                out.innerHTML = `<p class="font-bold text-yellow-400 text-sm">分析報告：目前心靈天氣多雲微雨 ☁️ (Score: ${total})</p><p class="text-slate-200 font-bold">"Your Mind Weather: Cloudy Skies — Mild stress detected."</p><p class="text-slate-300">心靈可能有點累了。趁著這段搭車的時間，不妨打開「🌿 放鬆練習」試做深呼吸。也可以找信任的人聊聊天。<br><span class="italic block mt-2 text-slate-400 text-[10px]">Cloudy Skies detected. You might be under mild stress. Try the exercises in the "Relaxation" tab or chat with a trusted friend.</span></p>${medicalDisclaimer}`;
             } else {
                 out.className = "mt-6 p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 text-xs space-y-3";
-                out.innerHTML = `<p class="font-bold text-emerald-400 text-sm">分析報告：目前心靈天氣正值晴朗 ☀️ (Score: ${total})</p><p class="text-slate-300">你目前的情緒狀態與心理韌性正處於健康範圍！未來當你再次感到疲倦，這裏隨時歡迎你回來給心靈充充電。祝旅途愉快！<br><span class="italic block mt-2 text-slate-400 text-[10px]">Clear Skies detected! Your state is healthy and stable. Feel free to return here whenever you need a mental recharge. Have a safe journey!</span></p>${medicalDisclaimer}`;
+                out.innerHTML = `<p class="font-bold text-emerald-400 text-sm">分析報告：目前心靈天氣正值晴朗 ☀️ (Score: ${total})</p><p class="text-slate-200 font-bold">"Your Mind Weather: Clear Skies — Your state is stable."</p><p class="text-slate-300">你目前的情緒狀態與心理韌性正處於健康範圍！未來當你再次感到疲倦，這裏隨時歡迎你回來給心靈充充電。祝旅途愉快！<br><span class="italic block mt-2 text-slate-400 text-[10px]">Clear Skies detected! Your state is healthy and stable. Feel free to return here whenever you need a mental recharge. Have a safe journey!</span></p>${medicalDisclaimer}`;
             }
         }
     </script>
