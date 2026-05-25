@@ -45,7 +45,7 @@
         <nav class="flex justify-between mt-6 border-b border-white/5 overflow-x-auto no-scrollbar">
             <button onclick="showTab('taxi-booking', 'red')" id="tab-taxi-booking" class="tab-btn tab-active-red pb-3 px-2 shrink-0 text-[12px] font-bold text-center">
                 <span class="lang-zh">🚖 的士預約</span>
-                <span class="lang-en">🚖 Booking</span>
+                <span class="lang-en">🚖 Reservation</span>
             </button>
             <button onclick="showTab('relaxation', 'green')" id="tab-relaxation" class="tab-btn pb-3 px-2 shrink-0 text-[12px] font-bold text-center">
                 <span class="lang-zh">🌿 放鬆練習</span>
@@ -53,11 +53,11 @@
             </button>
             <button onclick="showTab('quiz', 'blue')" id="tab-quiz" class="tab-btn pb-3 px-2 shrink-0 text-[12px] font-bold text-center">
                 <span class="lang-zh">🌤️ 最近好嗎？</span>
-                <span class="lang-en">🌤️ Check-in</span>
+                <span class="lang-en">🌤️ How Are You?</span>
             </button>
             <button onclick="showTab('help', 'orange')" id="tab-help" class="tab-btn pb-3 px-2 shrink-0 text-[12px] font-bold text-center">
                 <span class="lang-zh">💌 搵人傾吓</span>
-                <span class="lang-en">💌 Support</span>
+                <span class="lang-en">💌 Reach Out</span>
             </button>
         </nav>
     </header>
@@ -66,11 +66,11 @@
 
         <section id="section-taxi-booking" class="space-y-6">
             <div class="bg-red-500/10 p-6 rounded-3xl border-l-4 border-red-500 shadow-sm gentle-gradient">
-                <p class="lang-zh text-sm text-red-100 leading-relaxed italic font-medium">
-                    「生活雖然好忙碌，但無論點樣，我都覺得你值得抽一程的士嘅時間出嚟，停一停，好好照顧自己。 🚕」
+                <p class="lang-zh text-sm text-red-100 leading-relaxed font-medium">
+                    <b>生活雖然好忙碌，但無論點樣，我都覺得你值得抽一程的士嘅時間出嚟，停一停，好好照顧自己。</b> 🚕
                 </p>
-                <p class="lang-en text-sm text-red-100 leading-relaxed italic font-medium">
-                    "Life can be incredibly hectic. No matter what you're going through, I truly believe you deserve to take the length of this taxi ride to pause, breathe, and take good care of yourself. 🚕"
+                <p class="lang-en text-sm text-red-100 leading-relaxed font-medium">
+                    <b>Life can be incredibly hectic. No matter what you're going through, I truly believe you deserve to take the length of this taxi ride to pause, breathe, and take good care of yourself.</b> 🚕
                 </p>
             </div>
 
@@ -89,11 +89,6 @@
                     <i class="fa-solid fa-map-location-dot text-red-400 mt-1"></i>
                     <div class="lang-zh"><b class="text-slate-100">路線隨你心意</b>：歡迎指定行車路線或親自教路；如果無特別要求，則按 Google Maps 最佳建議路線行駛。</div>
                     <div class="lang-en"><b class="text-slate-100">Route Preference</b>: You are most welcome to specify your preferred route. Otherwise, the optimal Google Maps route will be seamlessly used.</div>
-                </div>
-                <div class="flex gap-3">
-                    <i class="fa-solid fa-heart text-red-400 mt-1"></i>
-                    <div class="lang-zh"><b class="text-slate-100">配合特別需求</b>：如有特定需要（如運送大型行李、摺疊輪椅或寵物乘車等），預約時提前說明即可。</div>
-                    <div class="lang-en"><b class="text-slate-100">Special Requirements</b>: For specific needs such as extra-large luggage, folded wheelchairs, or traveling with pets, simply let me know in advance during booking.</div>
                 </div>
             </div>
 
@@ -118,20 +113,20 @@
                 
                 <div class="text-xs space-y-4 leading-relaxed">
                     <div class="lang-zh">
-                        <p class="font-bold text-slate-200">❓ 📱 如何預約？</p>
+                        <p class="font-bold text-slate-200">📱 如何預約？</p>
                         <p class="text-slate-400 mt-1">本車由全職司機一人營運。為提供更穩定及專屬的服務，十分歡迎<b>每日或每週的定時用車預約</b>。如需即時接送或關口往返，敬請<b>提早最少一小時</b>聯絡。</p>
                     </div>
                     <div class="lang-en">
-                        <p class="font-bold text-slate-200">❓ 📱 How to book?</p>
+                        <p class="font-bold text-slate-200">📱 How to reserve?</p>
                         <p class="text-slate-400 mt-1">This taxi is operated independently by a single full-time driver. To ensure stable and dedicated service, long-term daily or weekly scheduled bookings are highly preferred. For immediate trips or border transfers, please contact me at least one hour in advance.</p>
                     </div>
 
                     <div class="lang-zh">
-                        <p class="font-bold text-slate-200">❓ 💳 接受哪些付款方式？</p>
+                        <p class="font-bold text-slate-200">💳 接受哪些付款方式？</p>
                         <p class="text-slate-400 mt-1">接受現金、PayMe、轉數快 (FPS)、AlipayHK、WeChat Pay 及八達通付款。</p>
                     </div>
                     <div class="lang-en">
-                        <p class="font-bold text-slate-200">❓ 💳 What payments are accepted?</p>
+                        <p class="font-bold text-slate-200">💳 What payments are accepted?</p>
                         <p class="text-slate-400 mt-1">Cash, PayMe, FPS, AlipayHK, WeChat Pay, and Octopus card are all seamlessly accepted.</p>
                     </div>
                 </div>
@@ -143,7 +138,7 @@
                 
                 <div class="lang-zh text-xs space-y-3 leading-relaxed text-slate-200">
                     <p>Hello，我係 Sean！最近啱啱開始做全職特更的士司機。🎒</p>
-                    <p>想邀請你喺呢短短一程車嘅時間，都可以停一停、唞一唞，可以用你舒服嘅方式放鬆或放空，又或者試吓唔同嘅放鬆練習，休息吓先再出發去面對唔同嘅挑戰。💪✨</p>
+                    <p>想邀請你喺呢短短一程車嘅時間，嘗試停一停、唞一唞，用你舒服嘅方式放鬆或放空，又或者試吓唔同嘅放鬆練習，休息吓先再出發去面對唔同嘅挑戰。✨</p>
                     <div class="p-3 bg-black/40 rounded-xl border border-red-500/30 mt-3">
                         <p><b>💡 溫馨小備註：</b><br>作為新手車長，我有時都唔係好熟路。🗺️ 如果途中唔小心行錯咗或者兜遠咗路，請你隨時出聲，非常樂意退回差價！先多謝你嘅包容同體諒。🙏❤️</p>
                     </div>
@@ -151,7 +146,7 @@
 
                 <div class="lang-en text-xs space-y-3 leading-relaxed text-slate-200">
                     <p>Hello, I'm Sean! I recently started my journey as a full-time taxi driver. 🎒</p>
-                    <p>I would like to invite you to use this short ride to simply pause and rest. You can relax or zone out in whatever way feels best to you, or try out the different relaxation exercises provided here. Take a well-deserved break before heading out to face your next challenge. 💪✨</p>
+                    <p>I would like to invite you to use this short ride to try to pause and rest. You can relax or zone out in whatever way feels best to you, or try out the different relaxation exercises provided here. Take a break before heading out to face your different challenges. ✨</p>
                     <div class="p-3 bg-black/40 rounded-xl border border-red-500/30 mt-3">
                         <p><b>💡 A Gentle Note:</b><br>As a newer driver, I might not be perfectly familiar with every single route yet. 🗺️ If I accidentally take a wrong turn or a slightly longer route, please don't hesitate to let me know—I am more than happy to refund the fare difference! Thank you so much for your patience and understanding. 🙏❤️</p>
                     </div>
@@ -169,10 +164,10 @@
         <section id="section-relaxation" class="hidden-section space-y-6">
             <div class="bg-emerald-500/10 p-6 rounded-3xl border-l-4 border-emerald-500 shadow-sm gentle-gradient">
                 <p class="lang-zh text-sm text-emerald-100 leading-relaxed">
-                    「練習唔需要追求完美，只要畀心靈試吓放鬆。初初練習可能會有啲唔慣、甚至覺得奇怪，呢啲都係好正常嘅反應，慢慢嚟就得。 🍵」
+                    <b>練習唔需要追求完美，只要畀心靈試吓放鬆。初初練習可能會有啲唔慣、甚至覺得奇怪，呢啲都係好正常嘅反應，慢慢嚟就得。</b> 🍵
                 </p>
                 <p class="lang-en text-sm text-emerald-100 leading-relaxed">
-                    "There is absolutely no need to strive for perfection in these exercises; simply give your mind a gentle opportunity to unwind. It is completely normal to feel a bit unfamiliar or slightly strange at first. Take your time and go at your own pace. 🍵"
+                    <b>There is absolutely no need to strive for perfection in these exercises; simply give your mind a gentle opportunity to unwind. It is completely normal to feel a bit unfamiliar or slightly strange at first. Take your time and go at your own pace.</b> 🍵
                 </p>
             </div>
 
@@ -457,7 +452,7 @@
             <div class="bg-blue-500/10 p-6 rounded-3xl border-l-4 border-blue-500 shadow-sm gentle-gradient">
                 <div class="lang-zh">
                     <p class="text-sm text-blue-100 leading-relaxed font-bold">
-                        「無論最近過成點，都好多謝你願意留少少時間畀自己，了解吓自己嘅精神健康狀態！ 🌤️」
+                        <b>無論最近過成點，都好多謝你願意留少少時間畀自己，了解吓自己嘅精神健康狀態！</b> 🌤️
                     </p>
                     <p class="text-xs text-slate-300 leading-relaxed mt-4">
                         以下為心靈天氣分析，大約只需 2-3 分鐘完成。請好好回想一下<b>過去兩個星期</b>，你有幾頻密受以下嘅情況困擾？憑直覺填寫就可以。
@@ -465,7 +460,7 @@
                 </div>
                 <div class="lang-en">
                     <p class="text-sm text-blue-100 leading-relaxed font-bold">
-                        "No matter how things have been for you lately, thank you for taking a brief moment for yourself to check in on your mental well-being! 🌤️"
+                        <b>No matter how things have been for you lately, thank you for taking a brief moment for yourself to check in on your mental well-being!</b> 🌤️
                     </p>
                     <p class="text-xs text-slate-300 leading-relaxed mt-4">
                         Below is a mental weather screening tool, taking about 2-3 minutes to complete. Please carefully reflect on the <b>past two weeks</b> and answer intuitively based on your feelings.
@@ -490,11 +485,11 @@
 
         <section id="section-help" class="hidden-section space-y-6">
             <div class="bg-orange-500/10 p-6 rounded-3xl border-l-4 border-orange-500 shadow-sm gentle-gradient">
-                <p class="lang-zh text-sm text-orange-100 leading-relaxed">
-                    「當你感到心靈負荷太重，唔需要一個人硬撐。呢度有一啲 24 小時守候嘅專業熱線同文字支援，隨時有人準備好聽你傾訴。 🤝」
+                <p class="lang-zh text-sm text-orange-100 leading-relaxed font-medium">
+                    <b>當你感到心靈負荷太重，唔需要一個人硬撐。呢度有一啲 24 小時守候嘅專業熱線同文字支援，隨時有人準備好聽你傾訴。</b> 🤝
                 </p>
-                <p class="lang-en text-sm text-orange-100 leading-relaxed">
-                    "When your mind feels incredibly heavy, please know you do not have to carry it all by yourself. Here are resources with professionals always ready to listen. 🤝"
+                <p class="lang-en text-sm text-orange-100 leading-relaxed font-medium">
+                    <b>When your mind feels incredibly heavy, please know you do not have to carry it all by yourself. Here are resources with professionals always ready to listen.</b> 🤝
                 </p>
                 
                 <div class="mt-4 p-4 bg-red-500/20 rounded-xl border border-red-500/30">
@@ -537,10 +532,10 @@
                             </li>
                             <li class="flex gap-2 items-start">
                                 <i class="fa-solid fa-hand-holding-heart text-orange-400/60 mt-0.5 text-xs shrink-0"></i>
-                                <span class="text-orange-300 leading-relaxed">如果講唔出聲或者淨係想喊，慢慢嚟，佢哋會喺另一邊靜靜陪住你。</span>
+                                <span class="text-orange-300 leading-relaxed">如果講唔出聲或者淨係想喊，慢米嚟，佢哋會喺另一邊靜靜陪住你。</span>
                             </li>
                             <li class="flex gap-2 items-start">
-                                <i class="fa-solid fa-sparkles text-orange-400/60 mt-0.5 text-xs shrink-0"></i>
+                                <i class="fa-solid fa-shield-heart text-orange-400/60 mt-0.5 text-xs shrink-0"></i>
                                 <span class="text-orange-300 leading-relaxed">🌟 記住，主動撥出呢個號碼，容許自己尋求協助，願意去正視痛苦，已經證明你比想像中更勇敢，亦係你為自己企返起身嘅第一步！</span>
                             </li>
                         </ul>
@@ -565,7 +560,7 @@
                                 <span class="text-orange-300 leading-relaxed">If you find yourself unable to speak or if you just need to cry, take all your time. They will quietly and supportively stay with you on the other end.</span>
                             </li>
                             <li class="flex gap-2 items-start">
-                                <i class="fa-solid fa-sparkles text-orange-400/60 mt-0.5 text-xs shrink-0"></i>
+                                <i class="fa-solid fa-shield-heart text-orange-400/60 mt-0.5 text-xs shrink-0"></i>
                                 <span class="text-orange-300 leading-relaxed">🌟 Remember, taking the initiative to dial this number and face your pain proves that you are much braver than you think—it is your first step toward standing back up!</span>
                             </li>
                         </ul>
@@ -671,7 +666,7 @@
                     </a>
                     <a href="tel:31610102" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
                         <div class="lang-zh">
-                            <p class="font-bold text-sm text-slate-100">明愛財困壓力專線</p>
+                            <p class="font-bold text-sm text-slate-100">財困壓力專線</p>
                             <p class="text-[10px] text-slate-400 mt-1">24小時註冊社工接聽，處理債務及理財困擾</p>
                         </div>
                         <div class="lang-en">
@@ -693,7 +688,7 @@
                     </a>
                     <a href="tel:22175959" class="glass p-5 rounded-2xl flex justify-between items-center hover:bg-white/5 transition border-l-4 border-l-purple-500">
                         <div class="lang-zh">
-                            <p class="font-bold text-sm text-slate-100">東華三院同・一線</p>
+                            <p class="font-bold text-sm text-slate-100">同・一線</p>
                             <p class="text-[10px] text-slate-400 mt-1"><b>對象：</b> 性/別小眾及其家人朋友 (24小時)</p>
                         </div>
                         <div class="lang-en">
@@ -770,7 +765,7 @@
 
         // Quiz Logic
         const phq9Questions = [
-            { zh: "做事缺乏興趣或者覺得毫無樂趣", en: "Having little interest or pleasure in doing things you used to enjoy" },
+            { zh: "做事缺乏興趣或者覺得毫隨樂趣", en: "Having little interest or pleasure in doing things you used to enjoy" },
             { zh: "感到心情低落、抑鬱、沮喪或絕望", en: "Feeling down, deeply depressed, or entirely hopeless" },
             { zh: "難以入睡、半夜易醒，或者睡眠時間過長", en: "Trouble falling or staying asleep, or sleeping significantly too much" },
             { zh: "覺得疲倦、虛脫或缺乏活力", en: "Feeling physically exhausted, drained, or having very little energy" },
@@ -841,7 +836,7 @@
                     </div>
                     <div class="lang-en">
                         <p class="font-bold text-red-400 text-sm">❤️ Please let us be there for you</p>
-                        <p class="text-slate-200 mt-2">Thoughts of self-harm detected. You don't have to carry this alone. Please visit the "Support" tab or call 999 immediately. Your life is immensely precious.</p>
+                        <p class="text-slate-200 mt-2">Thoughts of self-harm detected. You don't have to carry this alone. Please visit the "Reach Out" tab or call 999 immediately. Your life is immensely precious.</p>
                     </div>`; 
                 return;
             }
@@ -856,7 +851,7 @@
                     <div class="lang-en">
                         <p class="font-bold text-orange-400 text-sm">Analysis: Rainy Day 🌧️ (Score: ${total})</p>
                         <p class="text-slate-200 mt-2">High emotional distress detected. Your mind is exhausted and needs timely care.</p>
-                        <p class="text-slate-300 mt-2">We highly suggest trying the "Relaxation" exercises in the second tab, and calling the hotlines under the "Support" tab to talk to someone. If this mood persists for over 2 weeks, we strongly advise consulting clinical psychologists or psychiatrists for a professional evaluation.</p>
+                        <p class="text-slate-300 mt-2">We highly suggest trying the "Relaxation" exercises in the second tab, and calling the hotlines under the "Reach Out" tab to talk to someone. If this mood persists for over 2 weeks, we strongly advise consulting clinical psychologists or psychiatrists for a professional evaluation.</p>
                     </div>
                     ${medicalDisclaimer}`;
             } else if (total >= 5) {
