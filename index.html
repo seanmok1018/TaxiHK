@@ -310,7 +310,7 @@
                     <div class="glass p-4 rounded-2xl">
                         <i class="fa-solid fa-seedling text-emerald-400 text-xl mb-2 block"></i>
                         <p class="text-xs font-bold text-slate-200 mb-1">✨ 珍惜當下 / Mindfulness</p>
-                        <p class="text-[10px] text-slate-400 leading-normal">學習放慢腳步，用心感受生活每一刻嘅微小細節。<br><span class="text-[9px] text-slate-500 block mt-0.5">Consciously appreciate micro-details.</span></p>
+                        <p class="text-[10px] text-slate-400 leading-normal">學習放慢腳步，用心感受生活每一刻嘅微細細節。<br><span class="text-[9px] text-slate-500 block mt-0.5">Consciously appreciate micro-details.</span></p>
                     </div>
                 </div>
             </div>
@@ -357,6 +357,37 @@
                         如果你此刻有任何自殺、傷害自己，或者傷害他人嘅想法，又或者正面對任何即時生命危險與緊急情況，請立即撥打 <b class="text-red-400 text-sm font-bold">999</b> 報警求助，或者即刻去附近醫院嘅急症室。生命非常寶貴，請交給緊急專業人士支援。<br>
                         <span class="text-red-300/60 block mt-1">If you are currently experiencing thoughts of suicide, self-harm, harming others, or facing any immediate emergencies, please call <b>999</b> or proceed to the nearest A&E department. Your life is precious.</span>
                     </p>
+                </div>
+            </div>
+
+            <div class="glass rounded-3xl border border-orange-500/30 overflow-hidden">
+                <button onclick="toggleAccordion('seeking-help-tips')" class="w-full p-5 text-left flex justify-between items-center bg-orange-500/10 hover:bg-orange-500/20 transition focus:outline-none">
+                    <div>
+                        <p class="font-bold text-xs text-orange-400 leading-relaxed">💡 打電話之前覺得緊張？有小貼士比你：</p>
+                        <p class="text-[10px] text-orange-300/80 mt-0.5">Nervous before calling? Here are some tips...</p>
+                    </div>
+                    <i id="arrow-seeking-help-tips" class="fa-solid fa-chevron-down text-orange-400 text-xs transition-transform duration-200"></i>
+                </button>
+                <div id="content-seeking-help-tips" class="hidden p-5 bg-black/20 border-t border-white/5 text-xs space-y-4 text-slate-200 leading-relaxed">
+                    <p>撥出電話或者傳送訊息前，如果覺得猶豫或者緊張，其實係非常正常，想請你記住以下幾點：</p>
+                    <ul class="space-y-2 list-disc list-inside text-slate-300 pl-1">
+                        <li><b class="text-slate-200">承認自己需要幫手，並唔代表你唔夠堅強，</b>只係代表你已經一個人撐咗太耐。</li>
+                        <li><b class="text-slate-200">輔導員喺度，正正就係為咗聽你講心事。</b> 你願意搵佢哋，對佢哋嚟講係一份信任，絕對唔係一種打擾。</li>
+                        <li><b class="text-slate-200">唔知第一句講咩、點去講自己嘅狀態係絕對正常嘅。</b> 輔導員受過專業訓練，佢哋會耐心引導你。</li>
+                        <li><b class="text-slate-200">如果講唔出聲或者淨係想喊，慢慢嚟，</b>佢哋會喺另一邊靜靜陪住你。</li>
+                        <li><b class="text-slate-200">記住，主動撥出呢個號碼，容許自己尋求協助，願意去正視痛苦，</b>已經證明你比想像中更勇敢，亦係你為自己企返起身嘅第一步！</li>
+                    </ul>
+                    <hr class="border-white/5 my-2">
+                    <div class="text-[11px] space-y-3 leading-relaxed text-slate-400 italic">
+                        <p>Feeling hesitant or nervous before making a call or sending a text is completely normal. Please remember:</p>
+                        <ul class="space-y-2 list-disc list-inside pl-1">
+                            <li><b class="text-slate-300">Admitting you need help doesn't mean you're not strong enough;</b> it just means you've been carrying it alone for too long.</li>
+                            <li><b class="text-slate-300">Counselors are here specifically to listen to you.</b> Reaching out to them is an act of trust, never a bother.</li>
+                            <li><b class="text-slate-300">Not knowing what to say first is completely normal.</b> Counselors are professionally trained and will patiently guide you.</li>
+                            <li><b class="text-slate-300">If you can't speak or just need to cry, take your time.</b> They will quietly stay with you on the other end.</li>
+                            <li><b class="text-slate-300">Remember, taking the initiative to dial this number and face your pain</b> proves you are braver than you think—it is your first step toward standing back up!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -530,7 +561,8 @@
             if (Object.values(quizScores).includes(null)) { alert('請完成所有問題。 Please answer all questions!'); return; }
             const total = Object.values(quizScores).reduce((a, b) => a + b, 0);
             const q9 = quizScores[9]; const out = document.getElementById('quiz-output'); out.classList.remove('hidden');
-            const medicalDisclaimer = `<p class="mt-4 pt-3 border-t border-white/10 text-[9px] text-slate-500">⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。<br><span class="opacity-70">Note: This analysis is for reference only and is not a substitute for formal clinical diagnosis by professionals.</span></p>`;
+            
+            const medicalDisclaimer = `<p class="mt-4 pt-3 border-t border-white/10 text-[9px] text-slate-500">⚠️ 備註：此分析結果僅供參考，不能取代心理學家或醫生嘅正式臨床診斷。<br><span class="opacity-70">Note: This analysis is for reference only and is not a substitute for formal diagnosis by clinicians.</span></p>`;
 
             if (q9 > 0) {
                 out.className = "mt-6 p-5 rounded-2xl border border-red-500/50 bg-red-500/10 text-xs space-y-3";
