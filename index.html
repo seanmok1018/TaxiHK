@@ -117,7 +117,7 @@
                 <div class="text-xs space-y-4 leading-relaxed">
                     <div class="lang-zh">
                         <p class="font-bold text-slate-200">📱 如何預約？</p>
-                        <p class="text-slate-400 mt-1">為提供更穩定及專屬的服務，歡迎<b>每日或每週的定時用車預約</b>。如需即時接送或關口往返，敬請<b>提早最少一小時</b>透過電話或 WhatsApp 聯絡。</p>
+                        <p class="text-slate-400 mt-1">為提供更穩定及專屬的服務，十分歡迎<b>每日或每週的定時用車預約</b>。如需即時接送或關口往返，敬請<b>提早最少一小時</b>透過電話或 WhatsApp 聯絡。</p>
                     </div>
                     <div class="lang-en">
                         <p class="font-bold text-slate-200">📱 How to reserve?</p>
@@ -826,12 +826,16 @@
                 out.className = "mt-6 p-5 rounded-2xl border border-red-500/50 bg-red-500/10 text-xs space-y-3";
                 out.innerHTML = `
                     <div class="lang-zh">
-                        <p class="font-bold text-red-400 text-sm">❤️ 請停一停，給自己一個被陪伴嘅機會</p>
-                        <p class="text-slate-200 mt-2">不論此刻正承受幾大痛苦，你絕對不需要獨自面對。建議立即點擊「💌 搵人傾吓」聯絡 24小時熱線或致電 999 尋求緊急支援。</p>
+                        <p class="font-bold text-red-400 text-sm">分析報告：目前心靈天氣正經歷狂風暴雨 ⛈️</p>
+                        <p class="text-slate-200 mt-2">首先，請你慢慢做一個深呼吸。心靈正處於狂風暴雨之中，一定覺得好凍、好無助，但請記住，你而家喺車廂入面非常安全。</p>
+                        <p class="text-slate-200 mt-2">我知道你此刻正承受住難以想像嘅痛苦，甚至覺得好絕望，但請你相信，你絕對唔需要獨自面對。如果你腦海入面充斥住傷害自己、甚至了結生命嘅念頭，請你立即點擊「💌 搵人傾吓」聯絡 24 小時熱線，又或者聯絡相熟嘅社工同輔導員，佢哋隨時都準備好為你提供支援同跟進，陪你捱過呢場暴風雨。</p>
+                        <p class="text-slate-200 mt-2">如果你覺得自己已經去到臨界點、有即時危險，請即刻致電 999 或直接前往最近嘅醫院急症室。生命好寶貴，請畀個機會大家接住你。</p>
                     </div>
                     <div class="lang-en">
-                        <p class="font-bold text-red-400 text-sm">❤️ Please let us be there for you</p>
-                        <p class="text-slate-200 mt-2">Thoughts of self-harm detected. You don't have to carry this alone. Please visit the "Reach Out" tab or call 999 immediately. Your life is immensely precious.</p>
+                        <p class="font-bold text-red-400 text-sm">Analysis: Severe Storm ⛈️</p>
+                        <p class="text-slate-200 mt-2">First, please take a slow, deep breath. With your mind currently going through a severe storm, you must feel incredibly cold and helpless, but please remember that you are completely safe right now inside this taxi.</p>
+                        <p class="text-slate-200 mt-2">I know you are carrying an unimaginable amount of pain and may even feel desperate, but please believe that you absolutely do not have to face this alone. If your mind is filled with thoughts of self-harm or ending your life, please click the "💌 Reach Out" tab to call a 24-hour hotline immediately, or contact your trusted social worker or counselor. They are always ready to provide support and follow-ups to accompany you through this storm.</p>
+                        <p class="text-slate-200 mt-2">If you feel you have reached a breaking point and are in immediate danger, please dial 999 or go directly to the nearest hospital's A&E department right away. Your life is immensely precious. Please give everyone a chance to catch you.</p>
                     </div>`; 
                 return;
             }
@@ -840,13 +844,15 @@
                 out.innerHTML = `
                     <div class="lang-zh">
                         <p class="font-bold text-orange-400 text-sm">分析報告：目前心靈天氣正遭遇雨天 🌧️ (Score: ${total})</p>
-                        <p class="text-slate-200 mt-2">得分顯示你最近正承受住沉重嘅情緒負荷。</p>
-                        <p class="text-slate-300 mt-2">心靈累了，需要適時被照顧。建議你打開第二分頁進行「放鬆練習」，你亦可以隨時致電「💌 搵人傾吓」入面的熱線跟專業人員傾訴。若這種低落狀態已持續超過兩週，我非常建議你尋找合適的專業人士（如註冊臨床心理學家或精神科醫生）為你作進一步嘅全面評估。</p>
+                        <p class="text-slate-200 mt-2">得分顯示你最近承受住相當沉重嘅情緒負荷。就好似出面落緊大雨咁，你一個人擔住把遮應該已經撐咗好耐，真係辛苦晒。心靈攰到跌低咗，係需要適時被接住嘅。</p>
+                        <p class="text-slate-200 mt-2">趁住而家喺車廂呢個安全嘅避雨空間，強烈建議你打開「💌 搵人傾吓」，搵人即時傾訴。一個人擔住把遮咁耐，不如搵人幫手擔吓，可以考慮聯絡社工或專業輔導員，為自己安排長期嘅輔導同跟進，畀專業人士陪你一齊行過呢個雨季。</p>
+                        <p class="text-slate-200 mt-2">如果呢種大雨滂沱、無力嘅感覺已經持續超過兩個星期，非常鼓勵你尋求註冊臨床心理學家或精神科醫生作進一步評估同跟進。</p>
                     </div>
                     <div class="lang-en">
                         <p class="font-bold text-orange-400 text-sm">Analysis: Rainy Day 🌧️ (Score: ${total})</p>
-                        <p class="text-slate-200 mt-2">High emotional distress detected. Your mind is exhausted and needs timely care.</p>
-                        <p class="text-slate-300 mt-2">We highly suggest trying the "Relaxation" practices in the second tab, and calling the hotlines under the "Reach Out" tab to talk to someone. If this mood persists for over 2 weeks, we strongly advise consulting clinical psychologists or psychiatrists for a professional evaluation.</p>
+                        <p class="text-slate-200 mt-2">Your score indicates you've been carrying a heavy emotional burden lately. It’s like walking in the pouring rain—you must have been holding the umbrella all by yourself for quite a while. It’s been tough. When your mind is exhausted to the point of falling, it needs to be caught and cared for.</p>
+                        <p class="text-slate-200 mt-2">While you take shelter in this safe taxi space, we strongly encourage you to open the "💌 Reach Out" tab and talk to someone for immediate relief. You've been holding the umbrella alone for so long; let someone help you carry it. Consider contacting a social worker or professional counselor for long-term support, letting professionals accompany you through this rainy season.</p>
+                        <p class="text-slate-200 mt-2">If this overwhelming, helpless feeling has persisted for over two weeks, we highly encourage you to consult a clinical psychologist or psychiatrist for further evaluation and follow-up.</p>
                     </div>
                     ${medicalDisclaimer}`;
             } else if (total >= 5) {
@@ -854,11 +860,13 @@
                 out.innerHTML = `
                     <div class="lang-zh">
                         <p class="font-bold text-yellow-400 text-sm">分析報告：目前心靈天氣多雲微雨 ☁️ (Score: ${total})</p>
-                        <p class="text-slate-300 mt-2">心靈可能有點累了。趁著這段搭車的時間，不妨打開「🌿 放鬆練習」試做深呼吸。也可以找信任的人聊聊天。</p>
+                        <p class="text-slate-300 mt-2">連日嚟嘅生活可能令你覺得有啲攰，心靈天空開始積聚咗啲烏雲同微雨，辛苦你了。</p>
+                        <p class="text-slate-300 mt-2">好彩你而家坐緊喺一架遮風擋雨嘅的士入面，不如趁住呢段車程，打開「🌿 放鬆練習」，揀一段聲音導航合埋眼聽吓，畀個腦真正唞一唞。落車之後，亦可以獎勵自己食餐好嘅，或者搵個信得過嘅人呻吓，慢慢調整返自己嘅步伐。</p>
                     </div>
                     <div class="lang-en">
-                        <p class="font-bold text-yellow-400 text-sm">Analysis: Cloudy Skies ☁️ (Score: ${total})</p>
-                        <p class="text-slate-300 mt-2">Mild stress detected. You might be feeling a bit mentally drained. Try the breathing practices in the "Relaxation" tab or chat with a trusted friend to vent your feelings.</p>
+                        <p class="font-bold text-yellow-400 text-sm">Analysis: Cloudy with Light Rain ☁️ (Score: ${total})</p>
+                        <p class="text-slate-300 mt-2">Life might have been a bit draining lately, bringing some clouds and light rain to your mental sky. You've been working hard.</p>
+                        <p class="text-slate-300 mt-2">Fortunately, you are safely sheltered inside this taxi right now. Take advantage of this ride to open the "🌿 Relaxation" tab, pick an audio guide, close your eyes, and give your mind a true break. After getting off, you can reward yourself with a good meal or chat with someone you trust to gently reset your pace.</p>
                     </div>
                     ${medicalDisclaimer}`;
             } else {
@@ -866,11 +874,13 @@
                 out.innerHTML = `
                     <div class="lang-zh">
                         <p class="font-bold text-emerald-400 text-sm">分析報告：目前心靈天氣正值晴朗 ☀️ (Score: ${total})</p>
-                        <p class="text-slate-300 mt-2">你目前的情緒狀態與心理韌性正處於健康範圍！未來當你再次感到疲倦，這裏隨時歡迎你回來給心靈充充電。祝旅途愉快！</p>
+                        <p class="text-slate-300 mt-2">得分顯示你目前嘅情緒狀態同心理韌性都處於好健康嘅水平！就好似車窗外嘅好天氣一樣，雖然路途偶爾會有啲顛簸，但你依然游刃有餘。</p>
+                        <p class="text-slate-300 mt-2">趁住呢程車，好好欣賞吓風景，或者合埋眼享受片刻嘅寧靜啦。未來如果覺得攰，呢度隨時歡迎你返嚟避吓風頭、充充電。祝你今日旅途愉快！</p>
                     </div>
                     <div class="lang-en">
                         <p class="font-bold text-emerald-400 text-sm">Analysis: Clear Skies ☀️ (Score: ${total})</p>
-                        <p class="text-slate-300 mt-2">Your emotional state and resilience are in a very healthy range! Feel free to return here whenever you need a mental recharge in the future. Have a safe journey today!</p>
+                        <p class="text-slate-300 mt-2">Your score indicates that your emotional state and resilience are in a very healthy range! Just like a beautiful sunny day outside the car window, even if the road gets a little bumpy, you are navigating it wonderfully.</p>
+                        <p class="text-slate-300 mt-2">Take this ride to enjoy the scenery or close your eyes for a peaceful moment. Whenever you feel tired in the future, you are always welcome back here to recharge. Have a wonderful journey today!</p>
                     </div>
                     ${medicalDisclaimer}`;
             }
